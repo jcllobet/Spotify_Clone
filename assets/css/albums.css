@@ -1,0 +1,48 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+body {
+  background-color: #0e0e0eee;
+}
+.first-section {
+  background-color: #98357b;
+  background-image: linear-gradient(#98357b, rgba(0, 0, 0, 0.712));
+  width: 100%;
+  height: 400px;
+}
+/* create a transparent black colour */
+
+.second-section {
+  background-color: #0e0e0ead;
+  background-image: linear-gradient(transparent, #0e0e0ec4);
+  /* background-image: linear-gradient(to bottom, rgba(255, 0, 128, 0), black); */
+  opacity: 0.9;
+  width: 100%;
+  position: absolute;
+  top: 280px;
+  color: white;
+}
+
+.top > ion-icon {
+  font-size: 30px;
+}
+
+.detail {
+  margin-bottom: 0px;
+}
+
+img.round {
+  border-radius: 50%;
+}
+
+.bi-suit-heart,
+.bi-three-dots {
+  font-size: 20px;
+  margin-left: 15px;
+  position: relative;
+  bottom: 7px;
+}
+
+.bi-play-circle-fill {
+  font-size: 40px;
+  color: green;
+}
