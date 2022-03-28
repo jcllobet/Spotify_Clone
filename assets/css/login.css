@@ -1,0 +1,19 @@
+.text-style1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+a {
+  color: #47b750;
+}
+.facebook {
+  background-color: #3e5a9b !important;
+}
+.apple {
+}
+.log-in {
+  background-color: #47b750;
+}
+.signup {
+  background-color: none;
+  border: 2px black solid;
+}
