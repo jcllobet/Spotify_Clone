@@ -10,22 +10,28 @@ a:link {
   color: #47b750;
   text-decoration: none;
 }
-.or-lines {
-  display: inline;
-}
 .inputEmail3 {
-  background-image: url();
+  background-image: url(/assets/images/global/safe_login.png);
   position: right;
+  padding-right: 20px;
+  background-size: 30px;
+  background-repeat: no-repeat;
 }
 .facebook {
-  font-weight: 400;
-  font: 24px white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: white;
   background-color: #3e5a9b;
+  border-radius: 50px;
 }
 .apple {
-  font-weight: 400;
-  font: 24px white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: white;
   background-color: black;
+  border-radius: 50px;
 }
 #remember {
   background-color: #47b750;
@@ -35,12 +41,21 @@ a:link {
 }
 .log-in {
   background-color: #47b750;
+  border-radius: 50px;
 }
 .signup {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: black;
   background-color: none;
   border: 2px black solid;
+  border-radius: 50px;
 }
 .captcha {
-  height: 30px;
+  margin-top: 80px;
+  padding: 5px;
+  height: 50px;
+  justify-content: flex-end;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

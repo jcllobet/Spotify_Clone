@@ -36,6 +36,80 @@
       href="./assets/images/global/favicon.png"
       type="image/x-icon"
     />
+    <style>
+      .the-body {
+        border: none;
+        justify-content: center;
+      }
+      .text-style1 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+        font-size: 14px;
+      }
+      a:link {
+        color: #47b750;
+        text-decoration: none;
+      }
+      #inputEmail3 {
+        background-image: url(/assets/images/global/safe_login.png);
+        position: right;
+        padding-right: 20px;
+        background-size: 35px;
+        background-repeat: no-repeat;
+      }
+      .facebook {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        color: white;
+        background-color: #3e5a9b;
+        height: 40px;
+        border-radius: 50px;
+      }
+      .apple {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        color: white;
+        background-color: black;
+        height: 40px;
+        border-radius: 50px;
+      }
+      #remember {
+        background-color: #47b750;
+      }
+      .remeber-login {
+        display: inline;
+      }
+      .log-in {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        color: white;
+        background-color: #47b750;
+        height: 40px;
+        width: 160px;
+        border-radius: 50px;
+      }
+      .signup {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        color: black;
+        background-color: none;
+        border: 2px black solid;
+        height: 40px;
+        border-radius: 50px;
+      }
+      .captcha {
+        margin-top: 80px;
+        padding: 5px;
+        height: 50px;
+        justify-content: flex-end;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+    </style>
   </head>
   <body>
     <!-- Main content -->
@@ -85,14 +159,10 @@
           </div>
           <div class="remeber-login">
             <div>
-              <input type="checkbox" id="remember" name="remember" checked />
+              <input type="checkbox" id="remember" name="remember" />
               <label for="remember">Remeber me</label>
             </div>
-            <div class="form-group row">
-              <div class="col-sm-10">
-                <button type="submit" class="btn btn-primary">Log in</button>
-              </div>
-            </div>
+            <button type="submit" class="btn log-in">LOG IN</button>
           </div>
         </form>
         <p><a href="#">Forgot your password?</a></p>
