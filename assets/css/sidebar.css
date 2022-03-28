@@ -1,1 +1,48 @@
+#sidenav {
+    background-color: black;
+    color: white;
+}
 
+#sidenav .song-scroller {
+    overflow-y: scroll;
+    height: 400px;
+}
+
+.nav-logo {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#sidenav ul {
+    list-style-type: none;
+    list-style: none;
+    padding-left: 0px;
+}
+
+#sidenav ul li {
+    text-decoration: none;
+    padding-left: 1em;
+}
+
+#sidenav ul li.selected {
+    text-decoration: none;
+    color: white;
+    background-color: #282828;
+    border-radius: 5px;
+}
+
+#sidenav ul li a {
+    text-decoration: none;
+    color: lightgrey;
+}
+
+#sidenav ul li a.active {
+    text-decoration: none;
+    color: white;
+}
+
+#sidenav ul li a:hover {
+    text-decoration: none;
+    color: white;
+}

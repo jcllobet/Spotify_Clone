@@ -1,10 +1,6 @@
 function sidenav(elementId) {
+    // if the URL contains 'pages':
     const template = `
-    <div id="sticky-sidebar">
-        I am a sidenav
-
-        More and more text even when it overflows
-    </div>
     `;
     // Add HTML template above
 
