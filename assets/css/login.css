@@ -7,6 +7,13 @@
   font-weight: 800;
   font-size: 13px;
 }
+.text-style2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 13px;
+  margin: 0%;
+  padding-top: 6px;
+}
 a:link {
   color: #47b750;
   text-decoration: none;
@@ -26,6 +33,7 @@ a:link {
   background-color: #3e5a9b;
   height: 40px;
   border-radius: 50px;
+  margin-bottom: 10px;
 }
 .apple {
   font-family: "Montserrat", sans-serif;
@@ -35,6 +43,9 @@ a:link {
   background-color: black;
   height: 40px;
   border-radius: 50px;
+}
+.or-content {
+  justify-content: center;
 }
 #remember {
   background-color: #47b750;
