@@ -1,6 +1,7 @@
 .the-body {
   border: none;
   justify-content: center;
+  text-align: center;
 }
 .text-style1 {
   font-family: "Montserrat", sans-serif;
