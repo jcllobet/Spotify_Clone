@@ -10,6 +10,13 @@ a:link {
   color: #47b750;
   text-decoration: none;
 }
+.or-lines {
+  display: inline;
+}
+.inputEmail3 {
+  background-image: url();
+  position: right;
+}
 .facebook {
   font-weight: 400;
   font: 24px white;
@@ -19,6 +26,9 @@ a:link {
   font-weight: 400;
   font: 24px white;
   background-color: black;
+}
+#remember {
+  background-color: #47b750;
 }
 .remeber-login {
   display: inline;
