@@ -28,6 +28,14 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <link rel="stylesheet" href="./assets/css/global.css" />
     <link rel="stylesheet" href="./assets/css/login.css" />
     <title>Spotify | Login</title>
@@ -44,7 +52,7 @@
       .text-style1 {
         font-family: "Montserrat", sans-serif;
         font-weight: 800;
-        font-size: 14px;
+        font-size: 13px;
       }
       a:link {
         color: #47b750;
@@ -65,6 +73,7 @@
         background-color: #3e5a9b;
         height: 40px;
         border-radius: 50px;
+        margin-bottom: 10px;
       }
       .apple {
         font-family: "Montserrat", sans-serif;
@@ -101,6 +110,13 @@
         height: 40px;
         border-radius: 50px;
       }
+      .muted-text {
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        color: rgb(170, 168, 168);
+      }
       .captcha {
         margin-top: 80px;
         padding: 5px;
@@ -128,9 +144,13 @@
       <div class="card the-body">
         <p class="text-style1">To continue, log in to Spotify</p>
         <button type="button" class="btn facebook">
+          <span><ion-icon name="logo-facebook"></ion-icon></span>
           CONTINUE WITH FACEBOOK
         </button>
-        <button type="button" class="btn apple">CONTINUE WITH APPLE</button>
+        <button type="button" class="btn apple">
+          <span><ion-icon name="logo-apple"></ion-icon></span> CONTINUE WITH
+          APPLE
+        </button>
         <div class="or-lines">
           <hr />
           <span><p class="text-style1">OR</p></span>
@@ -171,7 +191,7 @@
         <p class="text-style1">Don't have an account?</p>
         <button type="button" class="btn signup">SIGN UP FOR SPOTIFY</button>
         <hr />
-        <p>
+        <p class="muted-text">
           If you click "Log in with Facebook" and are not a Spotify user, you
           will be registered and you agree to Spotify's
           <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.
