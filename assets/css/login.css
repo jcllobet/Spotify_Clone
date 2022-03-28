@@ -1,5 +1,6 @@
 .the-body {
   border: none;
+  justify-content: center;
 }
 .text-style1 {
   font-family: "Montserrat", sans-serif;
@@ -10,11 +11,17 @@ a:link {
   text-decoration: none;
 }
 .facebook {
-  font: 500 24px white;
+  font-weight: 400;
+  font: 24px white;
   background-color: #3e5a9b;
 }
 .apple {
+  font-weight: 400;
+  font: 24px white;
   background-color: black;
+}
+.remeber-login {
+  display: inline;
 }
 .log-in {
   background-color: #47b750;
@@ -22,4 +29,8 @@ a:link {
 .signup {
   background-color: none;
   border: 2px black solid;
+}
+.captcha {
+  height: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
