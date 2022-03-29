@@ -62,14 +62,172 @@
     <div class="container col-lg-3">
       <div class="card the-body">
         <p class="text-style1">To continue, log in to Spotify</p>
-        <button type="button" class="btn facebook">
+        <!-- facebook button -->
+        <button
+          type="button"
+          class="btn facebook"
+          data-toggle="modal"
+          data-target="#exampleModal"
+        >
           <span><ion-icon name="logo-facebook"></ion-icon></span>
           CONTINUE WITH FACEBOOK
         </button>
-        <button type="button" class="btn apple">
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header facebook-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  <span><ion-icon name="logo-facebook"></ion-icon></span>Log in
+                  with Facebook
+                </h5>
+
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group row">
+                    <div class="col-sm-12">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="inputEmail3"
+                        placeholder="Email address or username"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-12">
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="inputPassword3"
+                        placeholder="Password"
+                      />
+                    </div>
+                  </div>
+                  <div class="remeber-login">
+                    <input
+                      class="remember-me"
+                      type="checkbox"
+                      id="remember"
+                      name="remember"
+                    />
+                    <label for="log-in">Remeber me</label>
+                    <button type="submit" id="myButton" class="btn log-in">
+                      LOG IN
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- apple button -->
+        <button
+          type="button"
+          class="btn apple"
+          data-toggle="modal"
+          data-target="#exampleModal2"
+        >
           <span><ion-icon name="logo-apple"></ion-icon></span> CONTINUE WITH
           APPLE
         </button>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal2"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header apple-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  <span><ion-icon name="logo-apple"></ion-icon></span>Apple
+                </h5>
+
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group row">
+                    <div class="col-sm-12">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="inputEmail3"
+                        placeholder="Email address or username"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-12">
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="inputPassword3"
+                        placeholder="Password"
+                      />
+                    </div>
+                  </div>
+                  <div class="remeber-login">
+                    <input
+                      class="remember-me"
+                      type="checkbox"
+                      id="remember"
+                      name="remember"
+                    />
+                    <label for="log-in">Remeber me</label>
+                    <button type="submit" id="myButton" class="btn log-in">
+                      LOG IN
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- or -->
         <div class="container">
           <div class="row or-content">
             <div class="col">
@@ -83,6 +241,7 @@
             </div>
           </div>
         </div>
+        <!-- log in form -->
         <form>
           <div class="form-group row">
             <div class="col-sm-12">
@@ -106,7 +265,7 @@
           </div>
           <div class="remeber-login">
             <input
-              class="remember-me"
+              class="remember"
               type="checkbox"
               id="remember"
               name="remember"
