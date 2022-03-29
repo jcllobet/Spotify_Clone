@@ -80,7 +80,7 @@
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog modal-lg">
+          <div class="modal-dialog modal-xl">
             <div class="modal-content">
               <div class="modal-header facebook-header">
                 <h5 class="modal-title" id="exampleModalLabel">
@@ -123,16 +123,23 @@
               >
                 Continue as Diego 'Ziba' Banovaz
               </button>
-              <p>Cancel</p>
-              <p><span></span>This doesn't allow the app to post to Facebook</p>
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-dismiss="modal"
-                >
-                  Close
-                </button>
+              <p class="facebook-muted">Cancel</p>
+              <p class="facebook-muted">
+                <span><ion-icon name="lock-closed-outline"></ion-icon></span
+                >This doesn't allow the app to post to Facebook
+              </p>
+              <p class="facebook-muted">Privacy Policy</p>
+              <div class="modal-footer facebook-footer">
+                <p>
+                  You are using a display type of "popup" in a large browser
+                  window or tab. For better user experience, show this dialogue
+                  with our JavaScript SDK without specifying an explicit display
+                  type. The SDK will choose the best display type for each
+                  enviroment. Alternatively, set height and width on your
+                  window.open() call to property size this dialog if you have
+                  special requirements precluding you from using the SDK. This
+                  message iss only visible to developers of your application.
+                </p>
               </div>
             </div>
           </div>

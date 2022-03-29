@@ -44,17 +44,30 @@ a:hover {
 }
 .edit-this {
   color: #3e5a9b;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .continue-facebook {
   color: white;
   background-color: #3e5a9b;
   width: 70%;
   align-self: center;
-  margin-bottom: 90px;
+  margin-bottom: 70px;
+}
+.facebook-muted {
+  margin-top: 10px;
+  color: rgb(133, 132, 132);
+  font-size: 13px;
+}
+.facebook-footer {
+  margin-top: 20px;
+  font-size: 14px;
+  background-color: rgb(255, 227, 224);
+  border: solid 1px red;
 }
 .pop-up-spotify {
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
   height: 53px;
