@@ -35,6 +35,16 @@ a:hover {
   border-radius: 50px;
   margin-bottom: 10px;
 }
+.facebook:hover {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: white;
+  background-color: #5873b4;
+  height: 40px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
 .facebook-header {
   color: white;
   background-color: #3e5a9b;
@@ -83,6 +93,15 @@ a:hover {
   height: 40px;
   border-radius: 50px;
 }
+.apple:hover {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: white;
+  background-color: rgb(39, 39, 39);
+  height: 40px;
+  border-radius: 50px;
+}
 .apple-header {
   color: gray;
   background-color: rgb(236, 235, 235);
@@ -108,7 +127,7 @@ a:hover {
 }
 #myButton.apple-button {
   background-color: rgb(160, 160, 180);
-  margin-bottom: 50pxs;
+  margin-bottom: 20px;
 }
 .apple-link {
   font-size: 13px;
@@ -125,7 +144,7 @@ a:hover {
 }
 .apple-handshake {
   height: 40px;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-bottom: 20px;
 }
 .apple-footer {
