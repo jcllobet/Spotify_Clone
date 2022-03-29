@@ -1,1 +1,36 @@
 /* Write classes or css related to the homepage */
+
+.img-small img {
+    width: 60px;
+    height: 60px;
+}
+
+.card1 {
+    background-color: #a0a0a028;
+    height: 60px;
+    width: 200px;
+    position: relative;
+    align-items: space-between;
+    flex-direction: row;
+    margin-left: 30px;
+}
+
+.card-body1 {
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    position: relative;
+}
+.card2 img {
+    height: 160px;
+    width: 160px;
+}
+.card2 {
+    position: relative;
+    background-color: #a0a0a028;
+    width: 160px;
+    height: 280px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}

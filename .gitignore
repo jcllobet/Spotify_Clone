@@ -105,3 +105,6 @@ dist
 
 # VSCode directory
 .vscode
+
+# git ignore ds store
+.DS_Store
