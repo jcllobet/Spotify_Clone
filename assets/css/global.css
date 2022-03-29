@@ -1,19 +1,25 @@
+/* @import url(artist.css); */
+@import url(footer.css);
+@import url(homepage.css);
+@import url(login.css);
+@import url(sidebar.css);
+@import url(albums.css);
+
 body {
-  font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 .green {
-  background-color: #47b750;
+    background-color: #47b750;
 }
 .facebook-blue {
-  background-color: #3e5a9b;
+    background-color: #3e5a9b;
 }
 .main-background-color {
-  background-color: #121212;
+    background-color: #121212;
 }
 .playbar-color {
-  background-color: #191919;
+    background-color: #191919;
 }
 .sidebar-color {
-  background-color: #000000;
+    background-color: #000000;
 }
-/* Side bar text no hover/select oppacity 80% */

@@ -1,79 +1,45 @@
 function footer(elementId) {
     const template = `
-    <div class="page-footer font-small blue pt-4">
+    <div class="current-song">
+            <div>
+                <img src="/assets/images/global/Bildschirmfoto_2022-03-28_um_13.42.07.png" alt="">
+            </div>
+            <div>
+                <div>
+                    <h5>Current Song</h5>
+                    <span>Artist</span>
+                </div>
+                <i class="bi bi-heart fa"> </i>
+            </div>
+        </div>
 
-    <!-- Footer Links -->
-    <div class="container-fluid text-center text-md-left">
-
-        <!-- Grid row -->
-        <div class="row">
-
-        <!-- Grid column -->
-        <div class="col-md-6 mt-md-0 mt-3">
-
-            <!-- Content -->
-            <h5 class="text-uppercase">Footer Content</h5>
-            <p>Here you can use rows and columns to organize your footer content.</p>
+        <div class="player-controls">
+            <div class="player-controls_buttons">
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-step-forward"></i>
+            </div>
+            <div class="progress-container">
+                <span>0:00</span>
+                <div class="progress" draggable=true>test</div>
+                <span>3:00</span>
+            </div>
 
         </div>
-        <!-- Grid column -->
-
-        <hr class="clearfix w-100 d-md-none pb-3">
-
-        <!-- Grid column -->
-        <div class="col-md-3 mb-md-0 mb-3">
-
-            <!-- Links -->
-            <h5 class="text-uppercase">Links</h5>
-
-            <ul class="list-unstyled">
-            <li>
-                <a href="#!">Link 1</a>
-            </li>
-            <li>
-                <a href="#!">Link 2</a>
-            </li>
-            <li>
-                <a href="#!">Link 3</a>
-            </li>
-            <li>
-                <a href="#!">Link 4</a>
-            </li>
-            </ul>
-
+        <div class="volume-controls">
+            <i class="fas fa-step-backward"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="fas fa-step-backward"></i>
+            <div class="volume-progress-container">
+                <div class="progress" draggable=true>Long</div>
+            </div>
+            <div class="volume">
+                <div class="volumeUp">+</div>
+                <div class="volumeDown">-</div>
+            </div>
         </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-3 mb-md-0 mb-3">
-
-            <!-- Links -->
-            <h5 class="text-uppercase">Links</h5>
-
-            <ul class="list-unstyled">
-            <li>
-                <a href="#!">Link 1</a>
-            </li>
-            <li>
-                <a href="#!">Link 2</a>
-            </li>
-            <li>
-                <a href="#!">Link 3</a>
-            </li>
-            <li>
-                <a href="#!">Link 4</a>
-            </li>
-            </ul>
-
-        </div>
-        <!-- Grid column -->
-
-        </div>
-        <!-- Grid row -->
-
-    </div>
-    <!-- Footer Links -->
-    </div>
     `;
     // Add HTML template HERE
 

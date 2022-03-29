@@ -1,7 +1,7 @@
 function sidenav(elementId) {
     // if the URL contains 'pages':
     const template = `
-    <img src="./assets/images/sidebar/nav_logo.png" alt="spotify logo" class="nav-logo" />
+    <img src="/assets/images/sidebar/nav_logo.png" alt="spotify logo" class="nav-logo" />
     <ul class='list-group'>
         <li class="list-group-item list-group-item-action active">
             <a href="/index.html" class="d-flex">
