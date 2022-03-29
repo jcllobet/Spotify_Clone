@@ -15,15 +15,9 @@
   margin: 0%;
   padding-top: 6px;
 }
-a:link {
+a {
   color: #47b750;
   text-decoration: none;
-}
-#inputEmail3 {
-  background-image: url(/assets/images/global/safe_login.png);
-  padding-right: 20px;
-  background-size: 35px;
-  background-repeat: no-repeat;
 }
 .facebook {
   font-family: "Montserrat", sans-serif;
@@ -46,12 +40,6 @@ a:link {
 }
 .or-content {
   justify-content: center;
-}
-.remember-me {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  color: white;
 }
 .remeber-login {
   justify-content: space-between;
@@ -99,6 +87,7 @@ a:link {
   justify-content: flex-end;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 /* .cardrules {
   width: 60px;
   justify-content: flex-end;

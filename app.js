@@ -18,6 +18,9 @@ function getInputs() {
         return alert("Wrong email or password try again.");
     }
 }
+onload = getInputs();
+//----------------------------------------------------------------------------------------------------------------------
+//redirect from log in page to home page attempt 2.
 //----------------------------------------------------------------------------------------------------------------------
 // function getInputs() {
 //     const password = document.getElementById("inputPassword3");
@@ -28,3 +31,18 @@ function getInputs() {
 //         return alert("Wrong email or password try again.");
 //     }
 // }
+// document.getElementById("myButton").onclick = getInputs;
+//----------------------------------------------------------------------------------------------------------------------
+//redirect from log in page to home page attempt 3.
+//----------------------------------------------------------------------------------------------------------------------
+// function getInputs() {
+//     const password = document.getElementById("inputPassword3");
+//     const email = document.getElementById("inputEmail3");
+//     const button = document.getElementById("myButton");
+//     if (password.value === "cat123" && email.value === "admin@gmail.com") {
+//         button.onclick(location.href = "/index.html");
+//     } else {
+//         return alert("Wrong email or password try again.");
+//     }
+// }
+// onload = getInputs();
