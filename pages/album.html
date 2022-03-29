@@ -1,87 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        <!-- Bootstrap CSS -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-            crossorigin="anonymous"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
-        />
-        <link rel="stylesheet" href="./assets/css/global.css" />
-        <link rel="stylesheet" href="./assets/css/homepage.css" />
-        <link rel="stylesheet" href="./assets/css/sidebar.css" />
-        <link rel="stylesheet" href="./assets/css/footer.css" />
-        <title>Spotify | Album</title>
-        <link
-            rel="icon"
-            href="./assets/images/global/favicon.png"
-            type="image/x-icon"
-        />
-    </head>
-    <body>
-        <div class="container-fluid">
-            <div class="row no-gutters">
-                <div class="col-4">
-                    <h2>Hello</h2>
-                    <section id="sidenav">
-                        <!-- Side-nav javascript automatically injected during window load in app.js -->
-                    </section>
-                </div>
-                <div class="col-8">
-                    <main id="album">
-                        <h2>Album Page</h2>
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">
-                                    Card subtitle
-                                </h6>
-                                <p class="card-text">
-                                    Some quick example text to build on the card
-                                    title and make up the bulk of the card's
-                                    content.
-                                </p>
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-primary">
-                            Primary
-                        </button>
-                    </main>
-                </div>
-            </div>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/homepage.css" />
+    <link rel="stylesheet" href="./assets/css/sidebar.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="/assets/css/albums.css" />
+    <title>Spotify | Album</title>
+    <link
+      rel="icon"
+      href="./assets/images/global/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+        <div class="col-2">
+          <h2>Hello</h2>
+          <section id="sidenav">
+            <!-- Side-nav javascript automatically injected during window load in app.js -->
+          </section>
         </div>
+        <div class="col-10">
+          <main id="album">
+            <!-- start of top section -->
+            <div class="first-section">
+              <div class="top d-flex ml-4">
+                <ion-icon class="mt-3" name="chevron-back-circle"></ion-icon>
+                <ion-icon class="mt-3" name="chevron-forward-circle"></ion-icon>
 
-        <footer id="footer">
-            <!-- JS dynamically injected during window onload in app.js -->
-        </footer>
+                <div class="dropdown ml-auto mt-3">
+                  <button
+                    class="btn bg-dark rounded-pill text-light dropdown-toggle p-0"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="/assets/images/album/profile-picture.png"
+                      alt=""
+                      width="20px"
+                      height="20px"
+                    />
+                    Diego 'Ziba' Ba..
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </div>
+              <!-- end of top section -->
+              <!-- start of album section -->
+              <div class="d-flex mt-3 text-light">
+                <img
+                  class="ml-4"
+                  src="/assets/images/album/album1.jpeg"
+                  alt=""
+                  width="200px"
+                  height="200px"
+                />
 
-        <script
-            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-            crossorigin="anonymous"
-        ></script>
-        <script src="app.js" type="module"></script>
-    </body>
+                <div class="mt-auto ml-3">
+                  <p class="mb-0" style="font-size: 12px">
+                    <b> ALBUM</b>
+                  </p>
+                  <p class="mb-0" style="font-size: 30px">
+                    <b>Bohemian Rhapsody(The Original soundtrack)</b>
+                  </p>
+                  <p class="mb-0">
+                    <img
+                      class="round mr-1"
+                      src="/assets/images/album/album1.jpeg"
+                      alt=""
+                      width="20"
+                      height="20"
+                    /><b>Queen</b> · 2018 · 22 songs, 1 hr 19 min
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- end of album section -->
+            <!-- start of ablum bottom section -->
+            <div class="second-section">
+              <div class="ml-4">
+                <div class="icons">
+                  <i class="bi bi-play-circle-fill"></i>
+                  <i class="bi bi-suit-heart"></i>
+                  <i class="bi bi-three-dots"></i>
+                </div>
+
+                <div class="d-flex">
+                  <p class="mr-3" style="font-size: 12px">#</p>
+                  <p style="font-size: 12px">TITLE</p>
+                  <i class="bi bi-clock ml-auto mr-5"></i>
+                </div>
+                <hr class="m-n2" />
+                <br />
+                <div class="d-flex">
+                  <p class="mr-3" style="font-size: 12px">1</p>
+                  <p style="font-size: 15px">
+                    20th Century Fox Fanfare
+                    <span class="text-muted"
+                      ><br />
+                      Queen <br
+                    /></span>
+                  </p>
+                  <p class="ml-auto mr-5" style="font-size: 12px">0:25</p>
+                </div>
+
+                <div class="d-flex">
+                  <p class="mr-3" style="font-size: 12px">2</p>
+                  <p style="font-size: 15px">
+                    20th Century Fox Fanfare
+                    <span class="text-muted"
+                      ><br />
+                      Queen <br
+                    /></span>
+                  </p>
+                  <p class="ml-auto mr-5" style="font-size: 12px">0:25</p>
+                </div>
+
+                <div class="d-flex">
+                  <p class="mr-3" style="font-size: 12px">3</p>
+                  <p style="font-size: 15px">
+                    20th Century Fox Fanfare
+                    <span class="text-muted"
+                      ><br />
+                      Queen <br
+                    /></span>
+                  </p>
+                  <p class="ml-auto mr-5" style="font-size: 12px">0:25</p>
+                </div>
+
+                <div class="d-flex">
+                  <p class="mr-3" style="font-size: 12px">4</p>
+                  <p style="font-size: 15px">
+                    20th Century Fox Fanfare
+                    <span class="text-muted"
+                      ><br />
+                      Queen <br
+                    /></span>
+                  </p>
+                  <p class="ml-auto mr-5" style="font-size: 12px">0:25</p>
+                </div>
+
+                <div class="d-flex">
+                  <p class="mr-3" style="font-size: 12px">5</p>
+                  <p style="font-size: 15px">
+                    20th Century Fox Fanfare
+                    <span class="text-muted"
+                      ><br />
+                      Queen <br
+                    /></span>
+                  </p>
+                  <p class="ml-auto mr-5" style="font-size: 12px">0:25</p>
+                </div>
+
+                <div class="d-flex">
+                  <p class="mr-3" style="font-size: 12px">6</p>
+                  <p style="font-size: 15px">
+                    20th Century Fox Fanfare
+                    <span class="text-muted"
+                      ><br />
+                      Queen <br
+                    /></span>
+                  </p>
+                  <p class="ml-auto mr-5" style="font-size: 12px">0:25</p>
+                </div>
+
+                <div class="d-flex">
+                  <p class="mr-3" style="font-size: 12px">7</p>
+                  <p style="font-size: 15px">
+                    20th Century Fox Fanfare
+                    <span class="text-muted"
+                      ><br />
+                      Queen <br
+                    /></span>
+                  </p>
+                  <p class="ml-auto mr-5" style="font-size: 12px">0:25</p>
+                </div>
+
+                <div class="d-flex">
+                  <p class="mr-3" style="font-size: 12px">8</p>
+                  <p style="font-size: 15px">
+                    20th Century Fox Fanfare
+                    <span class="text-muted"
+                      ><br />
+                      Queen <br
+                    /></span>
+                  </p>
+                  <p class="ml-auto mr-5" style="font-size: 12px">0:25</p>
+                </div>
+
+                <div class="d-flex">
+                  <p class="mr-3" style="font-size: 12px">9</p>
+                  <p style="font-size: 15px">
+                    20th Century Fox Fanfare
+                    <span class="text-muted"
+                      ><br />
+                      Queen <br
+                    /></span>
+                  </p>
+                  <p class="ml-auto mr-5" style="font-size: 12px">0:25</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- end of ablum bottom section -->
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <!-- JS dynamically injected during window onload in app.js -->
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="app.js" type="module"></script>
+  </body>
 </html>
