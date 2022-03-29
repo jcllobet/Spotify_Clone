@@ -87,6 +87,24 @@ a:hover {
   color: gray;
   background-color: none;
 }
+.icon-holder {
+  margin-top: 160px;
+  justify-items: center;
+}
+.logo-apple {
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  height: 60px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.the-pluss {
+  font-weight: 700;
+  font-size: 48px;
+  color: rgb(173, 172, 172);
+  margin-bottom: 0%;
+}
+/* apple ends here */
 .or-content {
   justify-content: center;
 }
