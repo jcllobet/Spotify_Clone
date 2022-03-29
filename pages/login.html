@@ -51,6 +51,7 @@
     <nav class="navbar navbar-light justify-content-center">
       <a class="navbar-brand" href="#">
         <img
+          class="logo-img"
           src="/assets/images/global/spotify_logo_black.png"
           width="180"
           alt=""
@@ -61,14 +62,204 @@
     <div class="container col-lg-3">
       <div class="card the-body">
         <p class="text-style1">To continue, log in to Spotify</p>
-        <button type="button" class="btn facebook">
+        <!-- facebook button -->
+        <button
+          type="button"
+          class="btn facebook"
+          data-toggle="modal"
+          data-target="#exampleModal"
+        >
           <span><ion-icon name="logo-facebook"></ion-icon></span>
           CONTINUE WITH FACEBOOK
         </button>
-        <button type="button" class="btn apple">
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header facebook-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  <span><ion-icon name="logo-facebook"></ion-icon></span>Log in
+                  with Facebook
+                </h5>
+
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body facebook-body"></div>
+              <img
+                class="pop-up-spotify"
+                src="/assets/images/global/spotify_logo_black.png"
+                alt=""
+                srcset=""
+              />
+              <div>
+                <p>
+                  <b>Spotify</b> will receive:
+                  <br />
+                  your name and profile picture and email address.
+                </p>
+              </div>
+              <div class="edit-this">
+                <p>
+                  <span><ion-icon name="create-outline"></ion-icon></span> Edit
+                  this
+                </p>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary btn-lg continue-facebook"
+              >
+                Continue as Diego 'Ziba' Banovaz
+              </button>
+              <p class="facebook-muted">Cancel</p>
+              <p class="facebook-muted">
+                <span><ion-icon name="lock-closed-outline"></ion-icon></span
+                >This doesn't allow the app to post to Facebook
+              </p>
+              <p class="facebook-muted">Privacy Policy</p>
+              <div class="modal-footer facebook-footer">
+                <p>
+                  You are using a display type of "popup" in a large browser
+                  window or tab. For better user experience, show this dialogue
+                  with our JavaScript SDK without specifying an explicit display
+                  type. The SDK will choose the best display type for each
+                  enviroment. Alternatively, set height and width on your
+                  window.open() call to property size this dialog if you have
+                  special requirements precluding you from using the SDK. This
+                  message iss only visible to developers of your application.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- apple button -->
+        <button
+          type="button"
+          class="btn apple"
+          data-toggle="modal"
+          data-target="#exampleModal2"
+        >
           <span><ion-icon name="logo-apple"></ion-icon></span> CONTINUE WITH
           APPLE
         </button>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal2"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header apple-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  <span><ion-icon name="logo-apple"></ion-icon></span>Apple ID
+                </h5>
+
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row justify-content-center icon-holder">
+                    <div class="col-sm1">
+                      <img
+                        class="logo-apple"
+                        src="/assets/images/global/apple_logo.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-sm1">
+                      <p class="the-pluss">+</p>
+                    </div>
+                    <div class="col-sm1">
+                      <img
+                        class="logo-apple"
+                        src="/assets/images/global/spotify_mini_logo.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <p>Use your Apple ID to sign in to Spotify.</p>
+                <form>
+                  <div class="form-group row justify-content-center">
+                    <div class="col-sm-4">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="inputEmail3"
+                        placeholder="Apple ID"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group row justify-content-center">
+                    <div class="col-sm-4">
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="inputPassword3"
+                        placeholder="Password"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    type="submit"
+                    id="myButton"
+                    class="btn log-in apple-button"
+                  >
+                    AUTHORIZE
+                  </button>
+                </form>
+                <p>
+                  <a class="apple-link" href="#"
+                    >Forgot Apple ID or password?</a
+                  >
+                </p>
+                <img
+                  class="apple-handshake"
+                  src="/assets/images/global/handshake_icon.jfif"
+                  alt=""
+                  srcset=""
+                />
+                <p>
+                  <a class="apple-link" href="#"
+                    >See how your data is managed...</a
+                  >
+                </p>
+              </div>
+              <div class="modal-footer apple-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary apple-close"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- or -->
         <div class="container">
           <div class="row or-content">
             <div class="col">
@@ -82,6 +273,7 @@
             </div>
           </div>
         </div>
+        <!-- log in form -->
         <form>
           <div class="form-group row">
             <div class="col-sm-12">
@@ -105,17 +297,23 @@
           </div>
           <div class="remeber-login">
             <input
-              class="remember-me"
+              class="remember"
               type="checkbox"
               id="remember"
               name="remember"
             />
-            <label for="remember">Remeber me</label>
-            <button type="submit" class="btn log-in">LOG IN</button>
+            <label for="log-in">Remeber me</label>
+            <button
+              type="submit"
+              id="logInButton"
+              class="btn log-in regular-login"
+            >
+              LOG IN
+            </button>
           </div>
         </form>
-        <p><a href="#">Forgot your password?</a></p>
-        <!-- add marginon bottom -->
+        <p class="forgot-pass"><a href="#">Forgot your password?</a></p>
+        <!-- form ends here -->
         <hr />
         <p class="text-style1">Don't have an account?</p>
         <button type="button" class="btn signup">SIGN UP FOR SPOTIFY</button>
@@ -127,11 +325,14 @@
         </p>
       </div>
     </div>
-    <img
-      src="/assets/images/global/RecaptchaLogo.png"
-      class="rounded float-right captcha"
-      alt="..."
-    />
+    <!-- ths is the captcha -->
+    <div class="cardrules">
+      <img
+        src="/assets/images/global/RecaptchaLogo.png"
+        class="rounded float-right captcha"
+        alt="..."
+      />
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -142,6 +343,10 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
-    <script src="app.js" type="module"></script>
+    <script
+      src="
+    /app.js"
+      type="module"
+    ></script>
   </body>
 </html>
