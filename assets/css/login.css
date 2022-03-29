@@ -159,11 +159,7 @@ a:hover {
 .or-content {
   justify-content: center;
 }
-.remeber-login {
-  justify-content: space-between;
-  white-space: nowrap;
-}
-.log-in {
+#logInButton.regular-login {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 12px;
@@ -172,6 +168,23 @@ a:hover {
   height: 40px;
   width: 160px;
   border-radius: 50px;
+  margin-left: 30%;
+  margin-right: auto;
+}
+#logInButton.regular-login:hover {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: white;
+  background-color: #5bcf65;
+  height: 40px;
+  width: 160px;
+  border-radius: 50px;
+  margin-left: 30%;
+  margin-right: auto;
+}
+.forgot-pass {
+  margin-top: 10px;
 }
 .signup {
   font-family: "Montserrat", sans-serif;
