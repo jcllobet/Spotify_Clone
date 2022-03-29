@@ -80,7 +80,7 @@
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog">
+          <div class="modal-dialog modal-lg">
             <div class="modal-content">
               <div class="modal-header facebook-header">
                 <h5 class="modal-title" id="exampleModalLabel">
@@ -97,42 +97,34 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body">
-                <form>
-                  <div class="form-group row">
-                    <div class="col-sm-12">
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="inputEmail3"
-                        placeholder="Email address or username"
-                      />
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <div class="col-sm-12">
-                      <input
-                        type="password"
-                        class="form-control"
-                        id="inputPassword3"
-                        placeholder="Password"
-                      />
-                    </div>
-                  </div>
-                  <div class="remeber-login">
-                    <input
-                      class="remember-me"
-                      type="checkbox"
-                      id="remember"
-                      name="remember"
-                    />
-                    <label for="log-in">Remeber me</label>
-                    <button type="submit" id="myButton" class="btn log-in">
-                      LOG IN
-                    </button>
-                  </div>
-                </form>
+              <div class="modal-body facebook-body"></div>
+              <img
+                class="pop-up-spotify"
+                src="/assets/images/global/spotify_logo_black.png"
+                alt=""
+                srcset=""
+              />
+              <div>
+                <p>
+                  <b>Spotify</b> will receive:
+                  <br />
+                  your name and profile picture and email address.
+                </p>
               </div>
+              <div class="edit-this">
+                <p>
+                  <span><ion-icon name="create-outline"></ion-icon></span> Edit
+                  this
+                </p>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary btn-lg continue-facebook"
+              >
+                Continue as Diego 'Ziba' Banovaz
+              </button>
+              <p>Cancel</p>
+              <p><span></span>This doesn't allow the app to post to Facebook</p>
               <div class="modal-footer">
                 <button
                   type="button"
@@ -306,6 +298,10 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
-    <script src="app.js" type="module"></script>
+    <script
+      src="
+    /app.js"
+      type="module"
+    ></script>
   </body>
 </html>
