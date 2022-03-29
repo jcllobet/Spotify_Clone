@@ -8,18 +8,23 @@ window.onload = function () {
     footer("footer"); // We can add routes, currentRoute if needed
 };
 //redirect from log in page to home page.
-function getInputs(id) {
+function getInputs() {
     const password = document.getElementById("inputPassword3");
     const email = document.getElementById("inputEmail3");
+    const button = document.getElementById("myButton");
     if (password.value === "cat123" && email.value === "admin@gmail.com") {
-        document.getElementById("myButton").onclick = function () {
-            location.href = "/index.html"
-        }
+        button.onclick(location.href = "/index.html");
     } else {
-        alert("Wrong email or password try again.");
+        return alert("Wrong email or password try again.");
     }
 }
-//redirect from log in page to home page.
-document.getElementById("myButton").onclick = function () {
-    location.href = "/index.html"
-}
+//----------------------------------------------------------------------------------------------------------------------
+// function getInputs() {
+//     const password = document.getElementById("inputPassword3");
+//     const email = document.getElementById("inputEmail3");
+//     if (password.value === "cat123" && email.value === "admin@gmail.com") {
+//         return (location.href = "/index.html");
+//     } else {
+//         return alert("Wrong email or password try again.");
+//     }
+// }
