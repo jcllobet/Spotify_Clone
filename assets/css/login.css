@@ -90,19 +90,51 @@ a:hover {
 .icon-holder {
   margin-top: 160px;
   justify-items: center;
+  margin-bottom: 20px;
 }
 .logo-apple {
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 5px;
   padding: 5px;
-  height: 60px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 65px;
+  box-shadow: 0 4px 8px 0 rgba(53, 52, 52, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .the-pluss {
   font-weight: 700;
   font-size: 48px;
-  color: rgb(173, 172, 172);
+  color: rgb(158, 154, 180);
   margin-bottom: 0%;
+}
+#myButton.apple-button {
+  background-color: rgb(160, 160, 180);
+  margin-bottom: 50pxs;
+}
+.apple-link {
+  font-size: 13px;
+  color: rgb(92, 130, 253);
+  text-decoration: none;
+  margin: 0;
+}
+.apple-link:hover {
+  font-size: 14px;
+  color: rgb(92, 130, 253);
+  background-color: white;
+  text-decoration: none;
+  margin: 0;
+}
+.apple-handshake {
+  height: 40px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.apple-footer {
+  justify-content: center;
+}
+.apple-close {
+  width: 160px;
+  background-color: rgb(160, 160, 180);
+  border-color: none;
 }
 /* apple ends here */
 .or-content {
