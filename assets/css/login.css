@@ -168,8 +168,6 @@
   height: 40px;
   width: 160px;
   border-radius: 50px;
-  margin-left: 30%;
-  margin-right: auto;
 }
 #logInButton.regular-login:hover {
   font-family: "Montserrat", sans-serif;
@@ -180,11 +178,15 @@
   height: 40px;
   width: 160px;
   border-radius: 50px;
-  margin-left: 30%;
-  margin-right: auto;
 }
 .forgot-pass {
   margin-top: 10px;
+  color: #47b750 !important;
+  text-decoration: none;
+}
+.forgot-pass:hover {
+  color: #47b750 !important;
+  text-decoration: underline;
 }
 .signup {
   font-family: "Montserrat", sans-serif;
@@ -194,6 +196,18 @@
   background-color: none;
   border: 2px black solid;
   height: 40px;
+  width: 100%;
+  border-radius: 50px;
+}
+.signup:hover {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: black;
+  background-color: rgb(253, 253, 253);
+  border: 2px black solid;
+  height: 40px;
+  width: 100%;
   border-radius: 50px;
 }
 .muted-text {
@@ -220,10 +234,165 @@
 }
 
 /* .cardrules {
-  width: 60px;
-  justify-content: flex-end;
+    width: 60px;
+    justify-content: flex-end;
+  }
+  .cardrules:hover {
+    background-color: blue;
+    width: 100px;
+  } */
+/*------------------------------------------------------*/
+/*CSS for the registration page starts here*/
+/*------------------------------------------------------*/
+.reg-navbar {
+  padding-top: 25px;
 }
-.cardrules:hover {
-  background-color: blue;
-  width: 100px;
-} */
+.reg-facebook {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: white;
+  background-color: #3e5a9b;
+  height: 50px;
+  width: 80%;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  align-self: center;
+}
+.reg-facebook:hover {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: white;
+  background-color: #5873b4;
+  height: 50px;
+  width: 80%;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  align-self: center;
+}
+.reg-google {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: rgb(77, 77, 77);
+  background-color: rgb(255, 255, 255);
+  height: 50px;
+  width: 80%;
+  border: rgb(112, 112, 112) solid;
+  border-radius: 50px;
+  align-self: center;
+  margin-bottom: 20px;
+}
+.reg-google:hover {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: rgb(77, 77, 77);
+  background-color: rgb(252, 252, 252);
+  height: 50px;
+  width: 80%;
+  border: rgb(134, 134, 134) solid;
+  border-radius: 50px;
+  align-self: center;
+  margin-bottom: 20px;
+}
+/* top buttons end here */
+.reg-text5 {
+  font-weight: 700;
+  font-size: 28px;
+  color: rgb(0, 0, 0);
+  margin-top: 22px;
+  margin-bottom: 10px;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+.reg-text6 {
+  font-weight: 400;
+  color: grey;
+  font-size: 13px;
+  margin: 0%;
+  padding-top: 6px;
+}
+.reg-text1 {
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+  margin: 0%;
+  padding-top: 6px;
+  justify-content: left;
+}
+.reg-text2 {
+  padding-top: 20px;
+  font-size: 11px;
+  color: black;
+}
+.reg-text22 {
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.reg-text4 {
+  font-weight: 400;
+  color: rgb(136, 135, 135);
+  font-size: 11px;
+  text-align: left;
+}
+.reg-text0 {
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  margin: 0%;
+  text-align: left;
+}
+.reg-forminput {
+  border-color: black;
+  height: 50px;
+  padding: -14px;
+  padding: 0px;
+}
+.reg-bd {
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 25px;
+}
+.reg-drop {
+  height: 18px;
+  font-size: 12px;
+}
+.reg-drop:hover {
+  background-color: gainsboro;
+}
+.align-leftreg {
+  text-align: left;
+}
+.puff-top {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#RegisterButton.regular-registers {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  background-color: #47b750;
+  height: 50px;
+  width: 180px;
+  border-radius: 50px;
+  align-self: center;
+  margin-bottom: 35px;
+}
+#RegisterButton.regular-registers:hover {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+  background-color: #5bcf65;
+  height: 50px;
+  width: 10px;
+  border-radius: 50px;
+  align-self: center;
+  margin-bottom: 35px;
+}
