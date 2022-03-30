@@ -1,9 +1,32 @@
-.top-background > img {
+.backgroud-image {
+  background-image: url("/assets/images/artist/backgroud.jpeg");
   height: 80vh;
   width: 100%;
+  position: relative;
 }
 
-.background-top {
+.back {
+  position: absolute;
+  bottom: 650px;
+  left: 5px;
+  z-index: 5;
+}
+
+.forward {
+  position: absolute;
+  bottom: 650px;
+  left: 5px;
+  z-index: 5;
+}
+
+.profile-dropdown {
+  position: absolute;
+  bottom: 650px;
+  right: 5px;
+  z-index: 5;
+}
+
+.background-icons {
   position: absolute;
   top: 140px;
   left: 10px;
@@ -12,15 +35,15 @@
 .queen {
   position: absolute;
   top: 150px;
-  left: 10px;
+  left: 25px;
   font-size: 70px;
 }
 
 .listener {
   position: absolute;
   top: 250px;
-  left: 10px;
-  font-size: 10px;
+  left: 1px;
+  font-size: 12px;
 }
 
 .pause-btn {
@@ -47,5 +70,21 @@
 }
 
 .second-part {
-  background-color: blue;
+  background: linear-gradient(to bottom, #404040, #121212 180px);
+  width: 100%;
+  position: absolute;
+  transform: translateY(-370px);
+  color: white;
+}
+
+/* .scroll {
+  height: 70vh;
+  width: 100%;
+  overflow: scroll;
+} */
+
+/*  move the follow btn a little bit down */
+.follow-btn {
+  position: relative;
+  top: 30px;
 }
