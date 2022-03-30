@@ -320,40 +320,53 @@
                 <img src="/assets/images/global/Bildschirmfoto_2022-03-28_um_13.42.07.png" alt="">
             </div>
             <div>
-                <div>
+                <div class="artist">
                     <h5>Current Song</h5>
                     <span>Artist</span>
                 </div>
-                <i class="bi bi-heart fa"> </i>
+                <div class="actions">
+                    <i class="bi bi-heart fa"> </i>
+                    <i class="bi bi-x-lg fa"></i>
+                    <i class="bi bi-pip fa"></i>
+                </div>
+
             </div>
         </div>
 
         <div class="player-controls">
             <div class="player-controls_buttons">
-                <i class="fas fa-step-backward"></i>
-                <i class="fas fa-step-backward"></i>
-                <i class="fas fa-play"></i>
-                <i class="fas fa-step-forward"></i>
-                <i class="fas fa-step-forward"></i>
+                <i class="bi bi-shuffle fa"></i>
+                <i class="bi bi-skip-start-fill fa-lg"></i>
+                <i class="bi bi-play-fill fa-2x"></i>
+                <i class="bi bi-skip-end-fill fa-lg"></i>
+                <i class="bi bi-arrow-repeat fa-lg"></i>
             </div>
             <div class="progress-container">
                 <span>0:00</span>
-                <div class="progress" draggable=true>test</div>
+                <div class="progress-background">
+                    <!-- https://getbootstrap.com/docs/4.0/components/progress/ -->
+                    <div class="progress-bar" id="song-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
                 <span>3:00</span>
             </div>
+        </div>
 
         </div>
         <div class="volume-controls">
-            <i class="fas fa-step-backward"></i>
-            <i class="fas fa-step-backward"></i>
-            <i class="fas fa-step-backward"></i>
+            <i class="bi bi-mic"></i>
+            <i class="bi bi-view-list"></i>
+            <i class="bi bi-laptop"></i>
+            <i class="bi bi-volume-up"></i>
+
             <div class="volume-progress-container">
-                <div class="progress" draggable=true>Long</div>
+                <div class="progress-background mx-1">
+                    <!-- https://getbootstrap.com/docs/4.0/components/progress/ -->
+                    <div class="progress-bar" id="volume-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
             </div>
-            <div class="volume">
-                <div class="volumeUp">+</div>
-                <div class="volumeDown">-</div>
-            </div>
+            <i class="bi bi-arrows-angle-expand"></i>
         </div>
     </footer>
 
