@@ -3,7 +3,6 @@
 import { footer } from "./components/footer.js";
 import { sidenav } from "./components/sidenav.js";
 
-
 const checkIfValid = (event) => {
     event.preventDefault();
     console.log("clicked");
@@ -14,25 +13,29 @@ const checkIfValid = (event) => {
     console.log(email.value);
 
     if (password.value === "1" && email.value === "admin@gmail.com") {
-        location.href = "/index.html"
+        location.href = "/index.html";
         return true;
     } else {
         return alert("Wrong email or password try again.");
     }
 };
 
-
 // Add a listener to the button
 const addLoginListener = () => {
     const button = document.getElementById("logInButton");
     button.addEventListener("click", checkIfValid);
     console.log("added listener");
-}
+};
 
 //----------------------------------------------------------------------------------------------------------------------
 window.onload = function () {
-    // sidenav("sidenav"); // We can add routes, currentRoute if needed
-    // footer("footer"); // We can add routes, currentRoute if needed
+    if (
+        (window.location.pathname !== "/pages/login.html") |
+        (window.location.pathname !== "/pages/register.html")
+    ) {
+        sidenav("sidenav"); // We can add routes, currentRoute if needed
+        footer("footer"); // We can add routes, currentRoute if needed
+    }
     // add listener to the login button
     addLoginListener();
 };
