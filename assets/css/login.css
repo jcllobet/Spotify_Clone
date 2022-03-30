@@ -341,28 +341,22 @@
   text-align: left;
 }
 .reg-text0 {
-  font-weight: 600;
+  font-weight: 700;
   color: rgb(0, 0, 0);
-  font-size: 13px;
+  font-size: 14px;
   margin: 0%;
   text-align: left;
 }
 .reg-forminput {
   border-color: black;
   height: 50px;
-  padding: 14px;
+  padding: -14px;
   padding: 0px;
 }
 .reg-bd {
   justify-content: space-between;
   padding: 0;
   margin-bottom: 25px;
-}
-.reg-leftbox {
-  padding-left: 0px;
-}
-.reg-rightbox {
-  padding-right: 0px;
 }
 .reg-drop {
   height: 18px;
@@ -374,25 +368,31 @@
 .align-leftreg {
   text-align: left;
 }
+.puff-top {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 #RegisterButton.regular-registers {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   color: white;
   background-color: #47b750;
-  height: 40px;
-  width: 160px;
+  height: 50px;
+  width: 180px;
   border-radius: 50px;
   align-self: center;
+  margin-bottom: 35px;
 }
 #RegisterButton.regular-registers:hover {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 15px;
   color: white;
   background-color: #5bcf65;
-  height: 40px;
-  width: 160px;
+  height: 50px;
+  width: 10px;
   border-radius: 50px;
   align-self: center;
+  margin-bottom: 35px;
 }
