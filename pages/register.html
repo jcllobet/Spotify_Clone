@@ -49,6 +49,182 @@
     <!-- Main content -->
     <main id="register"></main>
     <!-------------------------------------------------------->
+    <nav class="navbar navbar-light justify-content-center">
+      <a class="navbar-brand login-link" href="#">
+        <img
+          class="logo-img"
+          src="/assets/images/global/spotify_logo_black.png"
+          width="180"
+          alt=""
+        />
+      </a>
+    </nav>
+    <div class="container col-lg-3 col-md-6 col-sm-6">
+      <div class="card the-body">
+        <p class="reg-text5">Register for free, and start listening.</p>
+        <button type="button" class="btn reg-facebook">
+          <span><ion-icon name="logo-facebook"></ion-icon></span>
+          SIGN UP USING FACEBOOK
+        </button>
+        <button type="button" class="btn reg-google">
+          <span><ion-icon name="logo-google"></ion-icon></span>
+          SIGN UP USING GOOLE
+        </button>
+        <!--or div-->
+        <div class="container">
+          <div class="row or-content">
+            <div class="col">
+              <hr />
+            </div>
+            <div class="col-2">
+              <span><p class="text-style2">OR</p></span>
+            </div>
+            <div class="col">
+              <hr />
+            </div>
+          </div>
+        </div>
+        <p>Register using your email address</p>
+        <!-- ---------------regster form starts here--------------- -->
+        <div class="container col-sm-12 justify-content-center">
+            <form>
+                <div class="reg-label"><p>Whats's your e-mail address?</p></div>
+                <div class="form-group row">
+                  <div class="col-sm-12">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="inputEmailreg1"
+                      placeholder="Input your e-mail address here"
+                    />
+                  </div>
+        </div>
+        <div class="reg-label"><p>Confirm your e-mail address</p></div>
+        <div class="form-group row">
+          <div class="col-sm-12">
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmailreg2"
+              placeholder="Input your e-mail address here"
+            />
+          </div>
+        </div>
+        <div class="reg-label"><p>Create password</p></div>
+        <div class="form-group row">
+            <div class="col-sm-12">
+              <input
+                type="password"
+                class="form-control"
+                id="inputPasswordreg1"
+                placeholder="Create password"
+              />
+            </div>
+          </div>
+          <div class="reg-label"><p>What should we call you?</p></div>
+        <div class="form-group row">
+            <div class="col-sm-12">
+              <input
+                type="username"
+                class="form-control register-form-input"
+                id="inpuUsenamereg1"
+                placeholder="Input username"
+              />
+              <p class="reg-text2">It will be displayed on your profile</p>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <label for="inputmonth">Day</label>
+                <input type="text" class="form-control" placeholder="State">
+              </div>
+              <div class="col-lg-4">
+                <label for="inputmonth">Month</label>
+      <select id="inputmonth" class="form-control">
+        <option selected>Month</option>
+                      <option class="dropdown-item reg-drop" type="button">January</option>
+                      <option class="dropdown-item reg-drop" type="button">February</option>
+                      <option class="dropdown-item reg-drop" type="button">March</option>
+                      <option class="dropdown-item reg-drop" type="button">April</option>
+                      <option class="dropdown-item reg-drop" type="button">May</option>
+                      <option class="dropdown-item reg-drop" type="button">June</option>
+                      <option class="dropdown-item reg-drop" type="button">July</option>
+                      <option class="dropdown-item reg-drop" type="button">August</option>
+                      <option class="dropdown-item reg-drop" type="button">September</option>
+                      <option class="dropdown-item reg-drop" type="button">October</option>
+                      <option class="dropdown-item reg-drop" type="button">November</option>
+                      <option class="dropdown-item reg-drop" type="button">December</option>
+                </select>
+              </div>
+              <div class="col-lg-4">
+                <label for="inputmonth">Year</label>
+                <input type="text" class="form-control" placeholder="State">
+              </div>
+            </div>
+          </div>
+          <div>
+          <p>What's your gender?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label reg-text2" for="inlineRadio1">Male</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label reg-text2" for="inlineRadio2">Female</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+            <label class="form-check-label reg-text2" for="inlineRadio3">Other</label>
+          </div>
+        </div>
+          <div class="container">
+            <div class="form-check ">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">I wish to receive news and offers from Spotify.</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Share my sign-up details with Spotify content providers for marketing purposes.</label>
+              </div>
+          </div>
+<!--POG can steal it from the actual page-->
+<div id="checkbox-container"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA"
+    src="https://www.google.com/recaptcha/enterprise/anchor?ar=1&amp;k=6LeO36obAAAAALSBZrY6RYM1hcAY7RLvpDDcJLy3&amp;co=aHR0cHM6Ly93d3cuc3BvdGlmeS5jb206NDQz&amp;hl=en&amp;v=2uoiJ4hP3NUoP9v_eBNfU6CR&amp;size=normal&amp;cb=l6vkb16hq8gt"
+     width="304" height="78" role="presentation" name="a-ax6qdp9dwwmp" frameborder="0" scrolling="no" 
+     sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea 
+     id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+    </div>
+    <div class="col-lg-12">
+        <div class="card the-body">
+    <p class="reg-text2">
+        If you click on Register you agree to Spotify's
+        <a class="login-link" href="#">Terms & Conditions</a> and
+        <a class="login-link" href="#">Privacy Policy</a>.
+      </p>
+      <button
+      type="submit"
+      id="RegisterButton"
+      class="btn log-in regular-registers"
+    >
+      REGISTER
+    </button>
+    <p class="reg-text3">
+        Already have a account?
+        <a class="login-link" href="/pages/login.html">Log in</a>.
+      </p>
+</div>
+</div>
+</div>
+</div>
+     <!-- ths is the captcha -->
+     <div class="cardrules">
+        <img
+          src="/assets/images/global/RecaptchaLogo.png"
+          class="rounded float-right captcha"
+          alt="..."
+        />
+      </div>
     <!-- Footer -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

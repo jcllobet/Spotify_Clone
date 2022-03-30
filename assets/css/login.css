@@ -196,7 +196,7 @@
   background-color: none;
   border: 2px black solid;
   height: 40px;
-  width: 400px;
+  width: 100%;
   border-radius: 50px;
 }
 .signup:hover {
@@ -207,7 +207,7 @@
   background-color: rgb(253, 253, 253);
   border: 2px black solid;
   height: 40px;
-  width: 400px;
+  width: 100%;
   border-radius: 50px;
 }
 .muted-text {
@@ -241,3 +241,82 @@
     background-color: blue;
     width: 100px;
   } */
+/*------------------------------------------------------*/
+/*CSS for the registration page starts here*/
+/*------------------------------------------------------*/
+.reg-facebook {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: white;
+  background-color: #3e5a9b;
+  height: 40px;
+  width: 80%;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  align-self: center;
+}
+.reg-facebook:hover {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: white;
+  background-color: #5873b4;
+  height: 40px;
+  width: 80%;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  align-self: center;
+}
+.reg-google {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: rgb(77, 77, 77);
+  background-color: rgb(255, 255, 255);
+  height: 40px;
+  width: 80%;
+  border: rgb(112, 112, 112) solid;
+  border-radius: 50px;
+  align-self: center;
+}
+.reg-google:hover {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: rgb(77, 77, 77);
+  background-color: rgb(252, 252, 252);
+  height: 40px;
+  width: 80%;
+  border: rgb(134, 134, 134) solid;
+  border-radius: 50px;
+}
+.reg-drop {
+  height: 18px;
+  font-size: 12px;
+}
+.reg-drop:hover {
+  background-color: gainsboro;
+}
+#RegisterButton.regular-registers {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: white;
+  background-color: #47b750;
+  height: 40px;
+  width: 160px;
+  border-radius: 50px;
+  align-self: center;
+}
+#RegisterButton.regular-registers:hover {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: white;
+  background-color: #5bcf65;
+  height: 40px;
+  width: 160px;
+  border-radius: 50px;
+  align-self: center;
+}
