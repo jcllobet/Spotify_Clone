@@ -1,222 +1,222 @@
 .the-body {
-    border: none;
-    justify-content: center;
-    text-align: center;
+  border: none;
+  justify-content: center;
+  text-align: center;
 }
 .text-style1 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 13px;
 }
 .text-style2 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 13px;
-    margin: 0%;
-    padding-top: 6px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 13px;
+  margin: 0%;
+  padding-top: 6px;
 }
-.spotiy-green {
-    color: #47b750 !important;
-    text-decoration: none;
+.login-link {
+  color: #47b750 !important;
+  text-decoration: none;
 }
-.spotiy-green:hover {
-    color: white;
-    background-color: #47b750;
-    text-decoration: none;
+.login-link:hover {
+  color: white !important;
+  background-color: #47b750;
+  text-decoration: none;
 }
 /* facebook stuff */
 .facebook {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 12px;
-    color: white;
-    background-color: #3e5a9b;
-    height: 40px;
-    border-radius: 50px;
-    margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: white;
+  background-color: #3e5a9b;
+  height: 40px;
+  border-radius: 50px;
+  margin-bottom: 10px;
 }
 .facebook:hover {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 13px;
-    color: white;
-    background-color: #5873b4;
-    height: 40px;
-    border-radius: 50px;
-    margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: white;
+  background-color: #5873b4;
+  height: 40px;
+  border-radius: 50px;
+  margin-bottom: 10px;
 }
 .facebook-header {
-    color: white;
-    background-color: #3e5a9b;
+  color: white;
+  background-color: #3e5a9b;
 }
 .facebook-body {
-    text-align: center;
+  text-align: center;
 }
 .edit-this {
-    color: #3e5a9b;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  color: #3e5a9b;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .continue-facebook {
-    color: white;
-    background-color: #3e5a9b;
-    width: 70%;
-    align-self: center;
-    margin-bottom: 70px;
+  color: white;
+  background-color: #3e5a9b;
+  width: 70%;
+  align-self: center;
+  margin-bottom: 70px;
 }
 .facebook-muted {
-    margin-top: 10px;
-    color: rgb(133, 132, 132);
-    font-size: 13px;
+  margin-top: 10px;
+  color: rgb(133, 132, 132);
+  font-size: 13px;
 }
 .facebook-footer {
-    margin-top: 20px;
-    font-size: 14px;
-    background-color: rgb(255, 227, 224);
-    border: solid 1px red;
+  margin-top: 20px;
+  font-size: 14px;
+  background-color: rgb(255, 227, 224);
+  border: solid 1px red;
 }
 .pop-up-spotify {
-    margin-top: 40px;
-    margin-bottom: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 53px;
-    width: 180px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 53px;
+  width: 180px;
 }
 /* apple stuff */
 .apple {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 12px;
-    color: white;
-    background-color: black;
-    height: 40px;
-    border-radius: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: white;
+  background-color: black;
+  height: 40px;
+  border-radius: 50px;
 }
 .apple:hover {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 13px;
-    color: white;
-    background-color: rgb(39, 39, 39);
-    height: 40px;
-    border-radius: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: white;
+  background-color: rgb(39, 39, 39);
+  height: 40px;
+  border-radius: 50px;
 }
 .apple-header {
-    color: gray;
-    background-color: rgb(236, 235, 235);
+  color: gray;
+  background-color: rgb(236, 235, 235);
 }
 .icon-holder {
-    margin-top: 160px;
-    justify-items: center;
-    margin-bottom: 20px;
+  margin-top: 160px;
+  justify-items: center;
+  margin-bottom: 20px;
 }
 .logo-apple {
-    border-radius: 10px;
-    margin: 5px;
-    padding: 5px;
-    height: 65px;
-    box-shadow: 0 4px 8px 0 rgba(53, 52, 52, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  height: 65px;
+  box-shadow: 0 4px 8px 0 rgba(53, 52, 52, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .the-pluss {
-    font-weight: 700;
-    font-size: 48px;
-    color: rgb(158, 154, 180);
-    margin-bottom: 0%;
+  font-weight: 700;
+  font-size: 48px;
+  color: rgb(158, 154, 180);
+  margin-bottom: 0%;
 }
 #myButton.apple-button {
-    background-color: rgb(160, 160, 180);
-    margin-bottom: 20px;
+  background-color: rgb(160, 160, 180);
+  margin-bottom: 20px;
 }
 .apple-link {
-    font-size: 13px;
-    color: rgb(92, 130, 253);
-    text-decoration: none;
-    margin: 0;
+  font-size: 13px;
+  color: rgb(92, 130, 253);
+  text-decoration: none;
+  margin: 0;
 }
 .apple-link:hover {
-    font-size: 14px;
-    color: rgb(92, 130, 253);
-    background-color: white;
-    text-decoration: none;
-    margin: 0;
+  font-size: 14px;
+  color: rgb(92, 130, 253);
+  background-color: white;
+  text-decoration: none;
+  margin: 0;
 }
 .apple-handshake {
-    height: 40px;
-    margin-top: 25px;
-    margin-bottom: 20px;
+  height: 40px;
+  margin-top: 25px;
+  margin-bottom: 20px;
 }
 .apple-footer {
-    justify-content: center;
+  justify-content: center;
 }
 .apple-close {
-    width: 160px;
-    background-color: rgb(160, 160, 180);
-    border-color: none;
+  width: 160px;
+  background-color: rgb(160, 160, 180);
+  border-color: none;
 }
 /* apple ends here */
 .or-content {
-    justify-content: center;
+  justify-content: center;
 }
 #logInButton.regular-login {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 12px;
-    color: white;
-    background-color: #47b750;
-    height: 40px;
-    width: 160px;
-    border-radius: 50px;
-    margin-left: 30%;
-    margin-right: auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: white;
+  background-color: #47b750;
+  height: 40px;
+  width: 160px;
+  border-radius: 50px;
+  margin-left: 30%;
+  margin-right: auto;
 }
 #logInButton.regular-login:hover {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 13px;
-    color: white;
-    background-color: #5bcf65;
-    height: 40px;
-    width: 160px;
-    border-radius: 50px;
-    margin-left: 30%;
-    margin-right: auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: white;
+  background-color: #5bcf65;
+  height: 40px;
+  width: 160px;
+  border-radius: 50px;
+  margin-left: 30%;
+  margin-right: auto;
 }
 .forgot-pass {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 .signup {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    color: black;
-    background-color: none;
-    border: 2px black solid;
-    height: 40px;
-    border-radius: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: black;
+  background-color: none;
+  border: 2px black solid;
+  height: 40px;
+  border-radius: 50px;
 }
 .muted-text {
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    color: rgb(170, 168, 168);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: rgb(170, 168, 168);
 }
 .captcha {
-    margin-top: 8%;
-    padding: 5px;
-    height: 50px;
-    justify-content: flex-end;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 8%;
+  padding: 5px;
+  height: 50px;
+  justify-content: flex-end;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .captcha:hover {
-    margin-top: 8%;
-    padding-left: 5px;
-    padding-right: 100px;
-    height: 50px;
-    justify-content: flex-end;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 8%;
+  padding-left: 5px;
+  padding-right: 100px;
+  height: 50px;
+  justify-content: flex-end;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* .cardrules {
