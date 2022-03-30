@@ -2,7 +2,7 @@
 #homepage {
     background-color: #000000;
     background-image: linear-gradient(0deg, #000000 60%, #490000 100%);
-    min-height: 150vh;
+    min-height: 170vh;
     color: white;
 }
 .img-small img {
@@ -43,9 +43,18 @@
     margin-left: 15px;
 }
 
-.card-title {
+.card-title2 {
     max-width: 200px;
+    margin-left: 15px;
     /* overflow: hidden; */
+}
+.card-text2 {
+    margin-left: 15px;
+    opacity: 0.5;
+}
+.card-title1 {
+    width: 200px;
+   
 }
 /********************************/
 .back {
