@@ -63,12 +63,13 @@
     justify-content: space-between;
 }
 
-#footer > .current-song > div:last-of-type > .actions > i {
+#footer > .current-song > div:last-of-type > .actions > a {
+    color: lightgrey;
     margin-left: 10px;
 }
 
-#footer > .current-song > div:last-of-type > .actions > i:hover {
-    /* Maybe adding a fill or changing icon on filter */
+#footer > .current-song > div:last-of-type > .actions > a:hover {
+    color: white;
 }
 
 #footer > .player-controls {
@@ -76,8 +77,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border: 1px solid red;
     margin: auto 0;
+    height: 90px;
 }
 
 #footer > .player-controls > .player-controls_buttons {
@@ -88,9 +91,14 @@
     border: 1px solid green;
 }
 
-#footer > .player-controls > .player-controls_buttons > i {
+#footer > .player-controls > .player-controls_buttons > a {
     margin-left: 10px;
     margin-right: 10px;
+    color: lightgray;
+}
+
+#footer > .player-controls > .player-controls_buttons > a:hover {
+    color: white;
 }
 
 .bi-play-fill::before {
@@ -145,11 +153,17 @@
     justify-content: flex-end;
     border: 1px solid white;
     margin: auto 0;
+    height: 90px;
 }
 
-#footer > .volume-controls > i {
+#footer > .volume-controls > a {
     margin-left: 5px;
     margin-right: 5px;
+    color: lightgrey;
+}
+
+#footer > .volume-controls > a:hover {
+    color: white;
 }
 
 #footer > .volume-controls > .volume-progress-container > .progress-background {
