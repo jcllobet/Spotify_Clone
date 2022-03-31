@@ -101,10 +101,6 @@
     color: white;
 }
 
-.bi-play-fill::before {
-    content: "\f4f0" !important;
-}
-
 #footer > .player-controls > .progress-container {
     display: flex;
     flex-direction: row;
@@ -162,6 +158,8 @@
     color: lightgrey;
 }
 
+
+
 #footer > .volume-controls > a:hover {
     color: white;
 }
@@ -191,4 +189,10 @@
     > .progress-background
     > .progress-bar:hover {
     background-color: #1fdf64;
+}
+
+.circular-white-bg {
+    position: absolute;
+    background-color: white;
+    color:white;
 }

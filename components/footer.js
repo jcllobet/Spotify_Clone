@@ -10,15 +10,15 @@ function footer(elementId) {
                     <span>Artist</span>
                 </div>
                 <div class="actions">
-                    <a href="/index.html" class="d-flex">
+                    <a href="#" class="d-flex">
                         <i class="bi bi-heart fa"></i>
                     </a>
 
-                    <a href="/index.html" class="d-flex">
+                    <a href="#" class="d-flex">
                         <i class="bi bi-x-lg fa"></i>
                     </a>
 
-                    <a href="/index.html" class="d-flex">
+                    <a href="#" class="d-flex">
                         <i class="bi bi-pip fa"></i>
                     </a>
 
@@ -27,25 +27,34 @@ function footer(elementId) {
             </div>
         </div>
 
+        <audio class="audio-play" src="
+        /music/surprise.mp3">
+        </audio>
+
         <div class="player-controls">
             <div class="player-controls_buttons">
-                <a href="/index.html" class="d-flex">
+                <a href="#" class="">
                     <i class="bi bi-shuffle fa"></i>
                 </a>
 
-                <a href="/index.html" class="d-flex">
+                <a href="#" class="previous-song-btn">
                     <i class="bi bi-skip-start-fill fa-lg"></i>
                 </a>
 
-                <a href="/index.html" class="d-flex">
+                <a href="#" class="music-play-btn">
                     <i class="bi bi-play-fill fa-2x"></i>
+                    <!-- <span class="circular-white-bg">Mec</span> -->
+                </a>
+                <a href="#" class="music-pause-btn">
+                    <i class="bi bi-pause-fill fa-2x"></i>
+                    <!-- <span class="circular-white-bg">Mec</span> -->
                 </a>
 
-                <a href="/index.html" class="d-flex">
+                <a href="#" class="next-song-btn">
                     <i class="bi bi-skip-end-fill fa-lg"></i>
                 </a>
 
-                <a href="/index.html" class="d-flex">
+                <a href="#" class="">
                     <i class="bi bi-arrow-repeat fa-lg"></i>
                 </a>
 
@@ -63,19 +72,19 @@ function footer(elementId) {
 
         </div>
         <div class="volume-controls mx-2">
-            <a href="/index.html" class="d-flex">
+            <a href="#" class="d-flex">
                 <i class="bi bi-mic fa"></i>
             </a>
 
-            <a href="/index.html" class="d-flex">
+            <a href="#" class="d-flex">
                 <i class="bi bi-view-list fa"></i>
             </a>
 
-            <a href="/index.html" class="d-flex">
+            <a href="#" class="d-flex">
                 <i class="bi bi-laptop fa"></i>
             </a>
 
-            <a href="/index.html" class="d-flex">
+            <a href="#" class="d-flex">
                 <i class="bi bi-volume-up fa"></i>
             </a>
 
