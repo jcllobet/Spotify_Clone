@@ -2,30 +2,36 @@
     background-color: black;
     color: white;
     position: fixed;
-    width:340px;
+    width:300px;
+    height: 110vh;
+    font-size: 14px;
 }
 
 #sidenav .song-scroller {
     overflow-y: scroll;
-    height: 340px;
+    height: 380px;
 }
 
 .nav-logo {
     width: 60%;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 #sidenav ul {
     list-style-type: none;
     list-style: none;
     padding-left: 0px;
+    margin-left: 20px;
 }
 
 #sidenav ul li {
     text-decoration: none;
     background-color: black;
+    color: lightgrey;
+    line-height: 1.8em;
+
 }
 
 #sidenav ul li.active {
@@ -57,10 +63,39 @@
 #sidenav ul li a:hover {
     text-decoration: none;
     color: white;
+    
 }
 
 #sidenav ul li div ol {
     list-style-type: none;
     text-decoration: none;
     padding-left: 20px;
+}
+
+#sidenav ul li:hover {
+    background-color: #282828;
+}
+#sidenav ol:hover {
+    background-color: #000;
+}
+#sidenav ol li:hover {
+    background-color: #000;
+    color: white;
+    font-weight: bold;
+
+}
+i {
+    width:15px;
+    margin-right: 5px;
+}
+.heart {
+    color: cornflowerblue;
+}
+.heart:hover {
+    color:crimson;
+
+}
+.install:hover {
+    color: #1db954;
+    
 }
