@@ -10,8 +10,8 @@
   width: 100%;
   align-content: flex-start;
 }
-.backArrow,
-.forwardArrow {
+.backedArrow,
+.forwardedArrow {
   background-color: black;
   color: white;
   border: 0px solid black;
@@ -20,8 +20,8 @@
   padding: 10px 17px;
   font-size: 20px;
 }
-.backArrow:hover,
-.forwardArrow:hover {
+.backedArrow:hover,
+.forwardedArrow:hover {
   background-color: rgb(43, 42, 42);
   color: white;
   border: 0px solid rgb(43, 42, 42);
