@@ -6,7 +6,7 @@ function sidenav(elementId) {
         <li class="list-group-item list-group-item-action active">
             <a href="/index.html" class="d-flex">
                 <i class="bi bi-house-door-fill fa-2x"> </i>
-                <span class=" justify-content-center text-center mx-3 my-auto font-weight-bold">
+                <span class=" justify-content-center text-center mx-3 my-auto">
                     Home
                 </span>
             </a>
@@ -14,7 +14,7 @@ function sidenav(elementId) {
         <li class="list-group-item list-group-item-action">
             <a href="/index.html" class="d-flex">
                 <i class="bi bi-search fa-2x"> </i>
-                <span class=" justify-content-center text-center mx-3 my-auto font-weight-bold">
+                <span class=" justify-content-center text-center mx-3 my-auto">
                     Search
                 </span>
             </a>
@@ -22,7 +22,7 @@ function sidenav(elementId) {
         <li class="list-group-item list-group-item-action">
             <a href="/index.html" class="d-flex">
                 <i class="bi bi-music-note-list fa-2x"> </i>
-                <span class=" justify-content-center text-center mx-3 my-auto font-weight-bold">
+                <span class=" justify-content-center text-center mx-3 my-auto">
                     Your Library
                 </span>
             </a>
@@ -30,7 +30,7 @@ function sidenav(elementId) {
         <li class="list-group-item list-group-item-action">
             <a href="/index.html" class="d-flex">
                 <i class="bi bi-plus-square-fill fa-2x"> </i>
-                <span class=" justify-content-center text-center mx-3 my-auto font-weight-bold">
+                <span class=" justify-content-center text-center mx-3 my-auto">
                     Create Playlist
                 </span>
             </a>
@@ -38,7 +38,7 @@ function sidenav(elementId) {
         <li class="list-group-item list-group-item-action">
             <a href="/index.html" class="d-flex">
                 <i class="bi bi-suit-heart-fill fa-2x"> </i>
-                <span class=" justify-content-center text-center mx-3 my-auto font-weight-bold">
+                <span class=" justify-content-center text-center mx-3 my-auto">
                     Liked Songs
                 </span>
             </a>

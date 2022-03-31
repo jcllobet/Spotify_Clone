@@ -1,0 +1,64 @@
+#sidenav {
+    background-color: black;
+    color: white;
+}
+
+#sidenav .song-scroller {
+    overflow-y: scroll;
+    height: 400px;
+}
+
+.nav-logo {
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+#sidenav ul {
+    list-style-type: none;
+    list-style: none;
+    padding-left: 0px;
+}
+
+#sidenav ul li {
+    text-decoration: none;
+    background-color: black;
+}
+
+#sidenav ul li.active {
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    background-color: #282828;
+    border-color: black;
+}
+
+#sidenav ul li a {
+    text-decoration: none;
+    color: lightgrey;
+}
+
+#sidenav ul li.active a {
+    text-decoration: none;
+    color: white;
+}
+
+#sidenav ul li a span {
+    align-content: center;
+}
+
+#sidenav ul li.active a span {
+    align-items: stretch;
+}
+
+#sidenav ul li a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+#sidenav ul li div ol {
+    list-style-type: none;
+    text-decoration: none;
+    padding-left: 20px;
+}
