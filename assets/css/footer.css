@@ -158,8 +158,6 @@
     color: lightgrey;
 }
 
-
-
 #footer > .volume-controls > a:hover {
     color: white;
 }
@@ -191,8 +189,8 @@
     background-color: #1fdf64;
 }
 
-.circular-white-bg {
+/* .circular-white-bg {
     position: absolute;
+    border-radius: 50%;
     background-color: white;
-    color:white;
-}
+} */
