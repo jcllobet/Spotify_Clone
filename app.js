@@ -66,6 +66,8 @@ async function playAudio() {
 }
 
 //----------------------------------------------------------------------------------------------------------------------
+
+// Check when dom has finished loading
 window.onload = function () {
     if (
         (window.location.pathname !== "/pages/login.html") |
