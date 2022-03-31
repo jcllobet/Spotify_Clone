@@ -2,6 +2,7 @@
   background-color: #121212;
 }
 .search-barr {
+  margin-left: 340px;
   padding-top: 10px;
   display: flex;
   justify-content: flex-start;
@@ -30,6 +31,7 @@
   font-size: 20px;
 }
 #search-boxbig {
+  margin-left: 340px;
   background-color: #121212;
 }
 form {
