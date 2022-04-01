@@ -10,7 +10,7 @@ function footer(elementId) {
                     <span>Artist</span>
                 </div>
                 <div class="actions">
-                    <a href="#" class="d-flex">
+                    <a href="#" class="music-like-btn d-flex">
                         <i class="bi bi-heart fa"></i>
                     </a>
 
@@ -33,11 +33,11 @@ function footer(elementId) {
 
         <div class="player-controls">
             <div class="player-controls_buttons">
-                <a href="#" class="">
+                <a href="#" class="music-shuffle-btn">
                     <i class="bi bi-shuffle fa"></i>
                 </a>
 
-                <a href="#" class="previous-song-btn">
+                <a href="#" class="music-prev-btn">
                     <i class="bi bi-skip-start-fill fa-lg"></i>
                 </a>
 
@@ -50,11 +50,11 @@ function footer(elementId) {
                     <!-- <span class="circular-white-bg">Mec</span> -->
                 </a>
 
-                <a href="#" class="next-song-btn">
+                <a href="#" class="music-next-btn">
                     <i class="bi bi-skip-end-fill fa-lg"></i>
                 </a>
 
-                <a href="#" class="">
+                <a href="#" class="music-repeat-btn">
                     <i class="bi bi-arrow-repeat fa-lg"></i>
                 </a>
 
