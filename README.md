@@ -1,13 +1,12 @@
 # Spotify React Web Client
 
-Spotify Web Client
-
-This project uses Bootstrap, HTML, CSS and Javascript.
+- This project is built with `HTML`, `CSS` and `Javascript`.
+- And with the support of `Bootstrap`, and `Font Awesome`.
 
 Build by:
 - Ahmed
-- Jan
-- Madara
+- 🚀 Jan
+- 🙃 Madara
 - Max
 
 As part of the Strive School (now Epicode) WEB22 Batch
