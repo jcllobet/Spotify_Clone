@@ -15,7 +15,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 1px solid pink;
 }
 
 #footer > .current-song > div > img {
@@ -24,17 +23,14 @@
 
 #footer > .current-song > div:first-of-type {
     margin-left: 10px;
-    border: 1px solid blue;
     max-width: 56px;
 }
 
 #footer > .current-song > div:last-of-type {
     display: flex;
     flex-direction: row;
-    border: 1px solid white;
     align-items: center;
     height: 50px;
-    border: 1px solid yellow;
 }
 
 #footer > .current-song > div:last-of-type > .artist {
@@ -78,7 +74,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
     margin: auto 0;
     height: 90px;
 }
@@ -88,7 +83,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid green;
 }
 
 #footer > .player-controls > .player-controls_buttons > a {
@@ -147,7 +141,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    border: 1px solid white;
     margin: auto 0;
     height: 90px;
 }
