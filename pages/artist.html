@@ -92,10 +92,13 @@
 
             <div class="second-part">
               <div class="top-stuffs d-flex">
-                <div class="pause-play d-flex mx-3">
-                  <div class="play-btn my-3"></div>
-                  <div class="pause-btn my-3"></div>
-                </div>
+                <div id="playAudio" class="play-btn my-3 mx-3"></div>
+                <audio
+                  id="testAudio"
+                  hidden
+                  src="/assets/music/music.mp3"
+                  type="audio/mpeg"
+                ></audio>
                 <button
                   type="button"
                   class="btn btn-outline-light px-2 border-1 my-4"
@@ -374,5 +377,21 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <script src="app.js" type="module"></script>
+    <script type="text/javascript">
+      document
+        .getElementById("playAudio")
+        .addEventListener("click", function () {
+          var audio = document.getElementById("testAudio");
+          if (this.className == "is-playing") {
+            this.className = "";
+            this.innerHTML = `<div id="playAudio" class="play-btn my-3 mx-3"></div>`;
+            audio.pause();
+          } else {
+            this.className = "is-playing";
+            this.innerHTML = `<div class="pause-btn my-3 mx-3"></div>`;
+            audio.play();
+          }
+        });
+    </script>
   </body>
 </html>
