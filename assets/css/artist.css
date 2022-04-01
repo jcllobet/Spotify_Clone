@@ -1,108 +1,108 @@
 .backgroud-image {
-  background-image: url("/assets/images/artist/backgroud.jpeg");
-  height: 500px;
-  width: 100%;
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url("/assets/images/artist/backgroud.jpeg");
+    height: 500px;
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .image-top {
-  position: absolute;
-  top: 0;
-  left: -15px;
-  margin-top: 6px;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
+    position: absolute;
+    top: 0;
+    left: -15px;
+    margin-top: 6px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
 }
 
 .background-icons {
-  position: absolute;
-  top: 145px;
-  left: 10px;
+    position: absolute;
+    top: 145px;
+    left: 10px;
 }
 
 .queen {
-  position: absolute;
-  top: 150px;
-  left: 25px;
-  font-size: 70px;
+    position: absolute;
+    top: 150px;
+    left: 25px;
+    font-size: 70px;
 }
 
 .listener {
-  position: absolute;
-  top: 250px;
-  left: 1px;
-  font-size: 12px;
+    position: absolute;
+    top: 250px;
+    left: 1px;
+    font-size: 12px;
 }
 
 .pause-btn {
-  width: 50px;
-  height: 50px;
-  background-color: green;
-  border-radius: 50%;
-  position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    border-radius: 50%;
+    position: relative;
 }
 
 .pause-btn::before {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  right: 0px;
-  left: 9.5px;
-  border-style: double;
-  border-width: 0px 0px 0px 14px;
-  border-color: transparent transparent transparent white;
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0px;
+    left: 9.5px;
+    border-style: double;
+    border-width: 0px 0px 0px 14px;
+    border-color: transparent transparent transparent white;
 }
 
 .play-btn {
-  width: 50px;
-  height: 50px;
-  background-color: green;
-  border-radius: 50%;
-  position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    border-radius: 50%;
+    position: relative;
 }
 
 .play-btn::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 5px;
-  border-style: solid;
-  border-width: 8px 0px 8px 16px;
-  border-color: transparent transparent transparent white;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 5px;
+    border-style: solid;
+    border-width: 8px 0px 8px 16px;
+    border-color: transparent transparent transparent white;
 }
 
 .pause-play .pause-btn {
-  display: none;
+    display: none;
 }
 
 .pause-play:hover .play-btn {
-  display: none;
+    display: none;
 }
 
 .pause-play:hover .pause-btn {
-  display: block;
+    display: block;
 }
 
 .second-part {
-  background: linear-gradient(to bottom, #404040, #121212 200px);
-  width: 100%;
-  height: 80vh;
-  position: absolute;
-  margin-top: -270px;
-  color: white;
-  z-index: 1;
+    background: linear-gradient(to bottom, #404040, #121212 200px);
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    margin-top: -270px;
+    color: white;
+    z-index: 1;
 }
 
 /* .scroll {
@@ -113,76 +113,75 @@
 
 /*  move the follow btn a little bit down */
 .follow-btn {
-  position: relative;
-  top: 30px;
+    position: relative;
+    top: 30px;
 }
 
 .btn-outline-light:hover {
-  color: white !important;
-  background-color: green;
-  border: 1px solid white;
+    color: white !important;
+    background-color: green;
+    border: 1px solid white;
 }
 
 .navtop {
-  position: absolute;
-  z-index: 10;
-  width: 100%;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
 }
 
 .greenhover:hover {
-  color: green !important;
+    color: green !important;
 }
 
 .popular:hover {
-  font-size: 20px !important;
-  color: red !important;
+    font-size: 20px !important;
+    color: red !important;
 }
 
 .more:hover {
-  text-decoration: underline;
-  color: greenyellow !important;
+    text-decoration: underline;
+    color: greenyellow !important;
 }
 
 /* make background-image the same on medium and large screen-size */
 @media (min-width: 768px) {
-  .backgroud-image {
-    background-image: url("/assets/images/artist/backgroud.jpeg");
-    height: 70vh;
-    width: 100%;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+    .backgroud-image {
+        background-image: url("/assets/images/artist/backgroud.jpeg");
+        height: 70vh;
+        width: 100%;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 /* increase the size of .image-top in large screen size */
 
 @media (min-width: 1500px) {
-  .image-top {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    margin-top: 70px;
-    width: 100%;
-    height: 100%;
-    z-index: 9;
-  }
+    .image-top {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin-top: 70px;
+        width: 100%;
+        height: 100%;
+        z-index: 9;
+    }
 }
 
 @media (min-width: 1500px) {
-  .second-part {
-    position: absolute;
-    top: 380px;
-    left: 0px;
-    margin-top: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 9;
-  }
+    .second-part {
+        position: absolute;
+        top: 380px;
+        left: 0px;
+        margin-top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9;
+    }
 }
 
-
-div .col-2 {
-  background-color: black;
-  height: 100vh;
+#baddiv {
+    background-color: black;
+    height: 100vh;
 }
