@@ -1,5 +1,19 @@
+#search-page, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/* ::-webkit-scrollbar {
+  width: 14px;
+}
+::-webkit-scrollbar-track {
+  background: #121212;
+  opacity: 0; 
+}
+::-webkit-scrollbar-thumb {
+  background: #535353;  
+} */
 .search-barr {
-  margin-left: 340px;
+  margin-left: 300px;
   padding-top: 10px;
   display: flex;
   justify-content: flex-start;
@@ -28,7 +42,9 @@
   font-size: 20px;
 }
 #search-boxbig {
-  margin-left: 340px;
+display: block;
+  padding-top: 20px;
+  margin-left: 300px;
   background-color: #121212;
 }
 form {
