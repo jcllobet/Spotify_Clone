@@ -180,3 +180,9 @@
     z-index: 9;
   }
 }
+
+
+div .col-2 {
+  background-color: black;
+  height: 100vh;
+}
