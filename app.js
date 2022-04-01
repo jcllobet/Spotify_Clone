@@ -49,38 +49,25 @@ const checkIfValid = (event) => {
 
 // Add a generic listener to button with action
 
-// const addListener = (btn, action, CallbackFunct) => {
-//     btn.addEventListener(action, CallbackFunct);
-//     console.log(
-//         `Added Listener to ${btn} on ${action} with function ${CallbackFunct}`
-//     );
-// };
-
-const addPrevListener = () => {
-    prevButton.addEventListener("click", handlePlayButton);
+const addListener = (btnName, btnElement, action, CallbackFunct) => {
+    btnElement.addEventListener(action, CallbackFunct);
     console.log(
-        `Added Listener to prevButton on click with function ${changeSong}`
-    );
-};
-
-const addLoginListener = () => {
-    loginButton.addEventListener("click", checkIfValid);
-    console.log(
-        `Added Listener to loginButton on click with function ${checkIfValid}`
-    );
-};
-
-const addPlayListener = () => {
-    // console.log(playButton);
-    playButton.addEventListener("click", handlePlayButton);
-    console.log(
-        `Added Listener to playButton on click with function ${handlePlayButton}`
+        `Added Listener to ${btnName} on ${action} with function ${CallbackFunct}`
     );
 };
 
 const addPauseListener = () => {
     // console.log(pauseButton);
     pauseButton.addEventListener("click", handlePlayButton);
+    pauseButton.style.display = "none";
+    console.log(
+        `Added Listener to pauseButton on click with function ${handlePlayButton}`
+    );
+};
+
+const addPrevListener = () => {
+    // console.log(pauseButton);
+    prevButton.addEventListener("click", handlePlayButton);
     pauseButton.style.display = "none";
     console.log(
         `Added Listener to pauseButton on click with function ${handlePlayButton}`
@@ -110,15 +97,11 @@ async function playAudio() {
     }
 }
 
-function changeSong() {
-    console.log(event.target);
-    if (event.target === prevButton) {
-        console.log("prev");
-    } else if (e.target === nextButton) {
-        console.log("next");
-    } else {
-        console.log("shuffle");
-    }
+function prevSong(e) {
+    audioElement.pause();
+    audioElement.src =
+        "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
+    audioElement.play();
 }
 
 const saveSong = () => {
@@ -128,6 +111,14 @@ const saveSong = () => {
 const logSong = () => {
     console.log(audioElement.src);
 };
+
+// check if the button is === empty
+const checkIfEmpty = (btnName, btnElement) => {
+    if (btnElement === EMPTY) {
+        console.log(`${btnName} is empty`);
+    }
+};
+
 //----------------------------------------------------------------------------------------------------------------------
 
 // Check when dom has finished loading
@@ -140,7 +131,7 @@ window.onload = function () {
         loginButton = document.getElementById("logInButton");
 
         //adding listeners
-        addLoginListener();
+        addListener("loginButton", loginButton, "click", checkIfValid);
     } else {
         console.log("we are not in login");
 
@@ -148,6 +139,8 @@ window.onload = function () {
         sidenav("sidenav"); // We can add routes, currentRoute if needed
         footer("footer"); // We can add routes, currentRoute if needed
 
+        // refreshed buttons Arr
+        let refreshedArr = [];
         //reload the buttons and add listener
         playButton = document.querySelector(".music-play-btn");
         pauseButton = document.querySelector(".music-pause-btn");
@@ -158,44 +151,28 @@ window.onload = function () {
         likeButton = document.querySelector(".music-like-btn");
         audioElement = document.querySelector("audio");
 
-        console.log(document.querySelector(".music-prev-btn"));
+        refreshedArr.push(
+            playButton,
+            pauseButton,
+            prevButton,
+            nextButton,
+            shuffleButton,
+            repeatButton,
+            likeButton
+        );
+        // check if the button is === empty using previously defined function for all elements of the array
+        refreshedArr.forEach((btn) => {
+            checkIfEmpty(btn.id, btn);
+        });
 
-        // if any query failed, log it
-        if (playButton === EMPTY) {
-            console.log("playButton is empty");
-        }
-        if (pauseButton === EMPTY) {
-            console.log("pauseButton is empty");
-        }
-        if (nextButton === EMPTY) {
-            console.log("nextButton is empty");
-        }
-        if (prevButton === EMPTY) {
-            console.log("prevButton is empty");
-        }
-        if (shuffleButton === EMPTY) {
-            console.log("shuffleButton is empty");
-        }
-        if (repeatButton === EMPTY) {
-            console.log("repeatButton is empty");
-        }
-        if (likeButton === EMPTY) {
-            console.log("likeButton is empty");
-        }
-        if (audioElement === EMPTY) {
-            console.log("audioElement is empty");
-        }
+        console.log("back to life");
 
-        console.log(prevButton);
-
-        //add the listeners one by one
+        //add the special listeners
         addPauseListener();
-        addPlayListener();
-        addPrevListener();
-        // addListener(prevButton, "onclick", changeSong);
-        // addListener(shuffleButton, "onclick", changeSong);
-        // addListener(repeatButton, "onclick", changeSong);
-        // addListener(likeButton, "onclick", saveSong);
+        //add all the other listeners
+        addListener("playButton", playButton, "click", handlePlayButton);
+        addListener("prevButton", prevButton, "click", prevSong);
+        //addListener("nextButton", nextButton, "click", changeSong);
     }
 };
 
