@@ -1,7 +1,7 @@
 # Spotify React Web Client
 
 - This project is built with `HTML`, `CSS` and `Javascript`.
-- And with the support of `Bootstrap`, and `Font Awesome`.
+- And with the support of the following libraries `Bootstrap`, and `Font Awesome`.
 
 Build by:
 - Ahmed
