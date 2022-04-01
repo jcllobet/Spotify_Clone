@@ -28,12 +28,25 @@ img.round {
   border-radius: 50%;
 }
 
-.bi-suit-heart,
+.hearts,
 .bi-three-dots {
   font-size: 20px;
   margin-left: 25px;
   position: relative;
   top: 10px;
+}
+
+.hearts .bi:nth-child(2) {
+  display: none;
+}
+
+.hearts:hover .bi:nth-child(1) {
+  display: none;
+}
+
+.hearts:hover .bi:nth-child(2) {
+  display: block;
+  color: red;
 }
 
 .bi-play-circle-fill {
@@ -42,8 +55,8 @@ img.round {
 }
 
 .play-button {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background-color: green;
   border-radius: 50%;
   position: relative;
@@ -64,13 +77,33 @@ img.round {
   border-color: transparent transparent transparent white;
 }
 
-.back {
+.pause-play .pause-btn {
+  display: none;
+}
+
+.pause-play:hover .play-button {
+  display: none;
+}
+
+.pause-play:hover .pause-btn {
+  display: block;
+}
+
+.pause-play .back {
   background-color: black;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   position: relative;
   left: 8px;
+}
+
+.back {
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
 }
 
 .back::before {
@@ -112,4 +145,11 @@ img.round {
   border-color: rgba(255, 255, 255, 0.562) rgba(255, 255, 255, 0.562)
     transparent transparent;
   transform: rotate(45deg);
+}
+
+.onHover:hover {
+  background-color: #202020;
+  color: white;
+  opacity: 0.7;
+  font-weight: bold;
 }

@@ -34,7 +34,6 @@
     <div class="container-fluid px-0">
       <div class="row no-gutters">
         <div class="col-2">
-          <h2>Hello</h2>
           <section id="sidenav">
             <!-- Side-nav javascript automatically injected during window load in app.js -->
           </section>
@@ -44,7 +43,7 @@
             <div class="top-background">
               <div class="navtop">
                 <div class="d-flex">
-                  <div class="back mr-3 mt-3"></div>
+                  <div class="back mx-3 mt-3"></div>
                   <div class="forward mt-3"></div>
                   <div class="dropdown ml-auto mt-3 mr-3 p-2 profile-dropdown">
                     <button
@@ -93,31 +92,39 @@
 
             <div class="second-part">
               <div class="top-stuffs d-flex">
-                <div class="pause-btn m-3"></div>
+                <div class="pause-play d-flex mx-3">
+                  <div class="play-btn my-3"></div>
+                  <div class="pause-btn my-3"></div>
+                </div>
                 <button
                   type="button"
-                  class="btn btn-outline-light px-2 border-1 text-light my-4"
-                  style="font-size: 12px; height: 30px"
+                  class="btn btn-outline-light px-2 border-1 my-4"
+                  style="
+                    font-size: 12px;
+                    height: 30px;
+                    color: grey;
+                    border-color: grey;
+                  "
                 >
                   FOLLOW
                 </button>
-                <i class="bi bi-three-dots text-light my-3"></i>
+                <i class="bi bi-three-dots text-muted my-3"></i>
               </div>
 
               <div class="down-stuffs">
                 <div class="row">
                   <div class="col-9">
                     <p
-                      class="text-light font-weight-bold ml-4"
+                      class="text-light font-weight-bold ml-4 popular"
                       style="font-size: 18px"
                     >
                       Popular
                     </p>
-                    <div class="row">
+                    <div class="row greenhover">
                       <div class="col-8 my-2">
                         <div class="d-flex">
                           <ion-icon
-                            class="ml-5 text-success"
+                            class="ml-5"
                             name="stats-chart-outline"
                           ></ion-icon>
                           <img
@@ -127,30 +134,29 @@
                             height="30px"
                             class="mx-2 mt-n2"
                           />
-                          <p class="text-success" style="font-size: 13px">
+                          <p class="" style="font-size: 12px">
                             <b> Another One Bites The Dust - Remastered 2011</b>
                           </p>
                         </div>
                       </div>
 
                       <div class="col-4 my-2">
-                        <div class="d-flex">
-                          <p
-                            class="mr-auto text-success"
-                            style="font-size: 13px"
-                          >
+                        <div class="d-flex d-flex">
+                          <p class="mr-auto" style="font-size: 12px">
                             <b> 1,013,238,772</b>
                           </p>
-                          <p class="text-success" style="font-size: 13px">
+                          <p class="" style="font-size: 12px">
                             <b>3:34</b>
                           </p>
                         </div>
                       </div>
+                    </div>
 
+                    <div class="row greenhover">
                       <div class="col-8 mb-2">
                         <div class="d-flex">
                           <p
-                            class="ml-5 px-1 text-light"
+                            class="ml-5 px-1"
                             name="stats-chart-outline"
                             style="font-size: 12px"
                           >
@@ -163,26 +169,28 @@
                             height="30px"
                             class="mx-2 mt-n2"
                           />
-                          <p class="text-light" style="font-size: 12px">
+                          <p class="" style="font-size: 12px">
                             <b> Bohemian Rhapsody - Remastered 2011</b>
                           </p>
                         </div>
                       </div>
                       <div class="col-4 mb-2">
                         <div class="d-flex">
-                          <p class="mr-auto text-light" style="font-size: 12px">
+                          <p class="mr-auto" style="font-size: 12px">
                             <b> 1,497,238,258</b>
                           </p>
-                          <p class="text-light" style="font-size: 12px">
+                          <p class="" style="font-size: 12px">
                             <b>5:54</b>
                           </p>
                         </div>
                       </div>
+                    </div>
 
+                    <div class="row greenhover">
                       <div class="col-8 mb-2">
                         <div class="d-flex">
                           <p
-                            class="ml-5 px-1 text-light"
+                            class="ml-5 px-1"
                             name="stats-chart-outline"
                             style="font-size: 12px"
                           >
@@ -195,26 +203,28 @@
                             height="30px"
                             class="mx-2 mt-n2"
                           />
-                          <p class="text-light" style="font-size: 12px">
+                          <p class="" style="font-size: 12px">
                             <b> Don't Stop Me Now - Remastered 2011</b>
                           </p>
                         </div>
                       </div>
                       <div class="col-4 mb-2">
                         <div class="d-flex">
-                          <p class="mr-auto text-light" style="font-size: 12px">
+                          <p class="mr-auto" style="font-size: 12px">
                             <b> 1,597,238,457</b>
                           </p>
-                          <p class="text-light" style="font-size: 12px">
+                          <p class="" style="font-size: 12px">
                             <b>3:29</b>
                           </p>
                         </div>
                       </div>
+                    </div>
 
+                    <div class="row greenhover">
                       <div class="col-8 mb-2">
                         <div class="d-flex">
                           <p
-                            class="ml-5 px-1 text-light"
+                            class="ml-5 px-1"
                             name="stats-chart-outline"
                             style="font-size: 12px"
                           >
@@ -227,26 +237,28 @@
                             height="30px"
                             class="mx-2 mt-n2"
                           />
-                          <p class="text-light" style="font-size: 12px">
+                          <p class="" style="font-size: 12px">
                             <b> Under pressure - Remastered 2011</b>
                           </p>
                         </div>
                       </div>
                       <div class="col-4 mb-2">
                         <div class="d-flex">
-                          <p class="mr-auto text-light" style="font-size: 12px">
+                          <p class="mr-auto" style="font-size: 12px">
                             <b> 900,238,096</b>
                           </p>
-                          <p class="text-light" style="font-size: 12px">
+                          <p class="" style="font-size: 12px">
                             <b>4:06</b>
                           </p>
                         </div>
                       </div>
+                    </div>
 
+                    <div class="row greenhover">
                       <div class="col-8 mb-2">
                         <div class="d-flex">
                           <p
-                            class="ml-5 px-1 text-light"
+                            class="ml-5 px-1"
                             name="stats-chart-outline"
                             style="font-size: 12px"
                           >
@@ -259,36 +271,41 @@
                             height="30px"
                             class="mx-2 mt-n2"
                           />
-                          <p class="text-light" style="font-size: 12px">
+                          <p class="" style="font-size: 12px">
                             <b> We Will Rock You - Remastered 2011</b>
                           </p>
                         </div>
                       </div>
                       <div class="col-4 mb-2">
                         <div class="d-flex">
-                          <p class="mr-auto text-light" style="font-size: 12px">
+                          <p class="mr-auto" style="font-size: 12px">
                             <b> 705,225,721</b>
                           </p>
-                          <p class="text-light" style="font-size: 12px">
+                          <p class="" style="font-size: 12px">
                             <b>2:02</b>
                           </p>
                         </div>
                       </div>
                     </div>
-                    <p style="font-size: 10px" class="text-light ml-5">
-                      SEE MORE
-                    </p>
-                    <p
-                      class="text-light font-weight-bold ml-4"
-                      style="font-size: 18px"
-                    >
-                      Popular release
-                    </p>
+                    <div class="row">
+                      <p style="font-size: 10px" class="text-light ml-5 more">
+                        SEE MORE
+                      </p>
+                    </div>
+                    <div class="row">
+                      <p
+                        class="text-light font-weight-bold ml-5 popular"
+                        style="font-size: 18px"
+                      >
+                        Popular release
+                      </p>
+                    </div>
                   </div>
+
                   <div class="col-3">
                     <p class="text-light font-weight-bold">Artist pick</p>
                     <div class="row">
-                      <div class="col-3">
+                      <div class="col-12 col-lg-3">
                         <img
                           class="mt-n1"
                           src="/assets/images/artist/artist-pick.jpeg"
@@ -297,7 +314,7 @@
                           height="65"
                         />
                       </div>
-                      <div class="col-9">
+                      <div class="col-12 col-lg-9 mr-auto">
                         <div class="d-flex">
                           <img
                             class="round mt-n1"
@@ -313,7 +330,10 @@
                             Posted By Queen
                           </p>
                         </div>
-                        <p class="text-light m-0" style="font-size: 12px">
+                        <p
+                          class="text-light m-0 greenhover"
+                          style="font-size: 12px"
+                        >
                           Queen Best Of
                         </p>
 
