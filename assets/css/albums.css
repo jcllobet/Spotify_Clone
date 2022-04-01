@@ -77,26 +77,17 @@ img.round {
   border-color: transparent transparent transparent white;
 }
 
-.pause-play .pause-btn {
+/* .pause-play .pause-btn {
   display: none;
-}
+} */
 
-.pause-play:hover .play-button {
+/* .pause-play:hover .play-button {
   display: none;
-}
+} */
 
-.pause-play:hover .pause-btn {
+/* .pause-play:hover .pause-btn {
   display: block;
-}
-
-.pause-play .back {
-  background-color: black;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  position: relative;
-  left: 8px;
-}
+} */
 
 .back {
   background-color: black;

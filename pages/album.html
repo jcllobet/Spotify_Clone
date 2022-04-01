@@ -86,24 +86,22 @@
                     height="200px"
                   />
                 </div>
-                <div class="col-12 col-lg-9 text-light mt-auto">
-                  <div class="mt-auto ml-3">
-                    <p class="mb-0" style="font-size: 12px">
-                      <b> ALBUM</b>
-                    </p>
-                    <p class="mb-0" style="font-size: 30px">
-                      <b>Bohemian Rhapsody(The Original soundtrack)</b>
-                    </p>
-                    <p class="mb-0">
-                      <img
-                        class="round mr-1"
-                        src="/assets/images/album/album1.jpeg"
-                        alt=""
-                        width="20"
-                        height="20"
-                      /><b>Queen</b> · 2018 · 22 songs, 1 hr 19 min
-                    </p>
-                  </div>
+                <div class="col-12 col-lg-9 text-light mt-auto moveleft">
+                  <p class="mb-0" style="font-size: 12px">
+                    <b> ALBUM</b>
+                  </p>
+                  <p class="mb-0" style="font-size: 30px">
+                    <b>Bohemian Rhapsody(The Original soundtrack)</b>
+                  </p>
+                  <p class="mb-0">
+                    <img
+                      class="round mr-1"
+                      src="/assets/images/album/album1.jpeg"
+                      alt=""
+                      width="20"
+                      height="20"
+                    /><b>Queen</b> · 2018 · 22 songs, 1 hr 19 min
+                  </p>
                 </div>
               </div>
               <!-- <div class="d-flex mt-3 text-light"></div> -->
@@ -113,10 +111,14 @@
             <div class="second-section">
               <div class="ml-4">
                 <div class="icons d-flex">
-                  <div class="pause-play d-flex">
-                    <div class="play-button my-3"></div>
-                    <div class="pause-btn my-3"></div>
-                  </div>
+                  <div id="playAudio" class="play-btn my-3"></div>
+                  <audio
+                    id="testAudio"
+                    hidden
+                    src="/assets/music/music.mp3"
+                    type="audio/mpeg"
+                  ></audio>
+
                   <div class="hearts my-3">
                     <i class="bi bi-suit-heart my-3"></i>
                     <i class="bi bi-heart-fill"></i>
@@ -345,5 +347,21 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <script src="/app.js" type="module"></script>
+    <script type="text/javascript">
+      document
+        .getElementById("playAudio")
+        .addEventListener("click", function () {
+          var audio = document.getElementById("testAudio");
+          if (this.className == "is-playing") {
+            this.className = "";
+            this.innerHTML = `<div class="play-button my-3"></div>`;
+            audio.pause();
+          } else {
+            this.className = "is-playing";
+            this.innerHTML = `<div class="pause-btn my-3"></div>`;
+            audio.play();
+          }
+        });
+    </script>
   </body>
 </html>
