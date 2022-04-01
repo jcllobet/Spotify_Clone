@@ -7,7 +7,7 @@ Build by:
 - 💪🏿 Ahmed
 - 🚀 Jan
 - 🙃 Madara
-- 🎨 Max
+- 🤷🏼‍♂️ Max
 
 As part of the Strive School (now Epicode) WEB22 Batch
 
