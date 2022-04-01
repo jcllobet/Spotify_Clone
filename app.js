@@ -7,13 +7,14 @@ import { sidenav } from "./components/sidenav.js";
 let playButton = document.querySelector(".music-play-btn");
 let pauseButton = document.querySelector(".music-pause-btn");
 let audioElement = document.querySelector(".audio-play");
+let button = document.getElementById("logInButton");
 
 const checkIfValid = (event) => {
     event.preventDefault();
     console.log("clicked");
     let password = document.getElementById("inputPassword3");
     let email = document.getElementById("inputEmail3");
-    const button = document.getElementById("logInButton");
+
     console.log(password.value);
     console.log(email.value);
 
@@ -69,20 +70,24 @@ async function playAudio() {
 
 // Check when dom has finished loading
 window.onload = function () {
-    if (
-        (window.location.pathname !== "/pages/login.html") |
-        (window.location.pathname !== "/pages/register.html")
-    ) {
+    let path = window.location.pathname;
+    console.log(path);
+    if (path.match("/pages/login.html") || path.match("/pages/register.html")) {
+        button = document.getElementById("logInButton");
+        addLoginListener();
+    } else {
+        console.log("we are not in login");
         //render sidenav & footer
         sidenav("sidenav"); // We can add routes, currentRoute if needed
         footer("footer"); // We can add routes, currentRoute if needed
+
+        //reloading buttons
         playButton = document.querySelector(".music-play-btn");
         pauseButton = document.querySelector(".music-pause-btn");
         audioElement = document.querySelector(".audio-play");
+
+        //adding listeners
         addPlayListener();
         addPauseListener();
-    } else {
-        addLoginListener();
     }
-    // add listener to the login button
 };
