@@ -7,7 +7,7 @@ Build by:
 - Ahmed
 - 🚀 Jan
 - 🙃 Madara
-- Max
+- 🎨 Max
 
 As part of the Strive School (now Epicode) WEB22 Batch
 
@@ -15,10 +15,9 @@ As part of the Strive School (now Epicode) WEB22 Batch
 
 - Play full audio tracks.
 - Control playback (pause, volume, shuffle, etc).
-- Search 
+- Search page
 - Log in and Sign Up
-- Add or edit your playlists.
-- "Responsiveness"
+- "Responsive" 
 
 ## Try it out
 - Only localhost for now, will be available once we move into node and react modules :)
