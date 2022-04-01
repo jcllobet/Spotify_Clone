@@ -8,10 +8,54 @@ const EMPTY = "not initialized";
 // initializing global variables
 
 let USER_STATUS = {
+    currentSong: 2,
     isLoggedIn: false,
     isAdmin: false,
     likedSongs: [],
 };
+
+let SONG_LIST = [
+    {
+        songName: "Best Vibes",
+        songArtist: "Magic DJ",
+        songPicture: "/images/artist/pic1.jpeg",
+        songUrl:
+            "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+    },
+    {
+        songName: "Oh my loving",
+        songArtist: "Harry Potter",
+        songPicture: "/images/artist/pic2.jpeg",
+        songUrl:
+            "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+    },
+    {
+        songName: "Mundian To Bach Ke",
+        songArtist: "Panjabi MC",
+        songPicture: "/images/artist/pic5.jpeg",
+        songUrl: "/music/surprise.mp3",
+    },
+    {
+        songName: "Dil Diya Le",
+        songArtist: "Panjabi MC",
+        songPicture: "/images/artist/artist-pick.jpeg",
+        songUrl: "/music/tuluktuluk.mp3",
+    },
+    {
+        songName: "I am lost for you",
+        songArtist: "Drake",
+        songPicture: "/images/artist/pic3.jpeg",
+        songUrl:
+            "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
+    },
+    {
+        songName: "Totally not fake",
+        songArtist: "DJ Javascript",
+        songPicture: "/images/artist/pic4.jpeg",
+        songUrl:
+            "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
+    },
+];
 
 // footer
 let playButton = EMPTY;
@@ -99,8 +143,23 @@ async function playAudio() {
 
 function prevSong(e) {
     audioElement.pause();
-    audioElement.src =
-        "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
+    if (USER_STATUS.currentSong === 0) {
+        USER_STATUS.currentSong = SONG_LIST.length - 1;
+    } else {
+        USER_STATUS.currentSong = USER_STATUS.currentSong - 1;
+    }
+    audioElement.src = SONG_LIST[USER_STATUS.currentSong].songUrl;
+    audioElement.play();
+}
+
+function nextSong(e) {
+    audioElement.pause();
+    if (USER_STATUS.currentSong === SONG_LIST.length - 1) {
+        USER_STATUS.currentSong = 0;
+    } else {
+        USER_STATUS.currentSong = USER_STATUS.currentSong + 1;
+    }
+    audioElement.src = SONG_LIST[USER_STATUS.currentSong].songUrl;
     audioElement.play();
 }
 
@@ -125,6 +184,8 @@ const checkIfEmpty = (btnName, btnElement) => {
 window.onload = function () {
     let path = window.location.pathname;
     console.log(path);
+
+    console.log(SONG_LIST);
 
     if (path.match("/pages/login.html") || path.match("/pages/register.html")) {
         //reloading button
@@ -172,7 +233,7 @@ window.onload = function () {
         //add all the other listeners
         addListener("playButton", playButton, "click", handlePlayButton);
         addListener("prevButton", prevButton, "click", prevSong);
-        //addListener("nextButton", nextButton, "click", changeSong);
+        addListener("nextButton", nextButton, "click", nextSong);
     }
 };
 
