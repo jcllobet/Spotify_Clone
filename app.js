@@ -67,7 +67,7 @@ let shuffleButton = EMPTY;
 let repeatButton = EMPTY;
 let likeButton = EMPTY;
 let audioElement = EMPTY;
-
+let songSeconds = EMPTY;
 //login
 let loginButton = EMPTY;
 
@@ -136,6 +136,7 @@ function handlePlayButton() {
 async function playAudio() {
     try {
         await audioElement.play();
+        startSongSeconds();
         //playButton.classList.remove("bi bi-play-circle-fill");
     } catch (err) {
         //playButton.classList.remove("bi bi-play-circle-fill");
@@ -160,6 +161,13 @@ function nextSong(e) {
     } else {
         USER_STATUS.currentSong = USER_STATUS.currentSong + 1;
     }
+    changeSongDetails(SONG_LIST[USER_STATUS.currentSong], audioElement);
+    audioElement.play();
+}
+
+function randomSong(e) {
+    audioElement.pause();
+    USER_STATUS.currentSong = Math.floor(Math.random() * SONG_LIST.length);
     changeSongDetails(SONG_LIST[USER_STATUS.currentSong], audioElement);
     audioElement.play();
 }
@@ -208,6 +216,19 @@ const updateSongFooter = () => {
     console.log("songs were replaced successfully");
 };
 
+// it updates the second counter
+const startSongSeconds = () => {
+    let songSeconds = document.querySelector(".player-song-seconds");
+    setInterval(() => {
+        let secondCount = Math.floor(audioElement.currentTime);
+        if (secondCount < 10) {
+            songSeconds.innerText = `0:0${secondCount}`;
+        } else {
+            songSeconds.innerText = `0:${secondCount}`;
+        }
+    }, 1000);
+};
+
 //----------------------------------------------------------------------------------------------------------------------
 
 // Check when dom has finished loading
@@ -230,7 +251,7 @@ window.onload = function () {
         sidenav("sidenav"); // We can add routes, currentRoute if needed
         footer("footer"); // We can add routes, currentRoute if needed
 
-        // updateSongFooter();
+        updateSongFooter();
         //replacing footer song values by current
         // refreshed buttons Arr
         let refreshedArr = [];
@@ -266,6 +287,7 @@ window.onload = function () {
         addListener("playButton", playButton, "click", handlePlayButton);
         addListener("prevButton", prevButton, "click", prevSong);
         addListener("nextButton", nextButton, "click", nextSong);
+        addListener("shuffleButton", shuffleButton, "click", randomSong);
     }
 };
 
