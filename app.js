@@ -8,7 +8,7 @@ const EMPTY = "not initialized";
 // initializing global variables
 
 let USER_STATUS = {
-    currentSong: 2,
+    currentSong: 0,
     isLoggedIn: false,
     isAdmin: false,
     likedSongs: [],
@@ -16,42 +16,43 @@ let USER_STATUS = {
 
 let SONG_LIST = [
     {
+        songName: "Mundian To Bach Ke",
+        songArtist: "Panjabi MC",
+        songPicture:
+            "/assets/images/global/Bildschirmfoto_2022-03-28_um_13.42.07.png",
+        songUrl: "/music/surprise.mp3",
+    },
+    {
+        songName: "Dil Diya Le",
+        songArtist: "Panjabi MC",
+        songPicture: "/assets/images/artist/pic5.jpeg",
+        songUrl: "/music/tuluktuluk.mp3",
+    },
+    {
         songName: "Best Vibes",
         songArtist: "Magic DJ",
-        songPicture: "/images/artist/pic1.jpeg",
+        songPicture: "/assets/images/artist/pic1.jpeg",
         songUrl:
             "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
     },
     {
         songName: "Oh my loving",
         songArtist: "Harry Potter",
-        songPicture: "/images/artist/pic2.jpeg",
+        songPicture: "/assets//images/artist/pic2.jpeg",
         songUrl:
             "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
     },
     {
-        songName: "Mundian To Bach Ke",
-        songArtist: "Panjabi MC",
-        songPicture: "/images/artist/pic5.jpeg",
-        songUrl: "/music/surprise.mp3",
-    },
-    {
-        songName: "Dil Diya Le",
-        songArtist: "Panjabi MC",
-        songPicture: "/images/artist/artist-pick.jpeg",
-        songUrl: "/music/tuluktuluk.mp3",
-    },
-    {
         songName: "I am lost for you",
         songArtist: "Drake",
-        songPicture: "/images/artist/pic3.jpeg",
+        songPicture: "/assets//images/artist/pic3.jpeg",
         songUrl:
             "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
     },
     {
         songName: "Totally not fake",
         songArtist: "DJ Javascript",
-        songPicture: "/images/artist/pic4.jpeg",
+        songPicture: "/assets//images/artist/pic4.jpeg",
         songUrl:
             "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
     },
@@ -148,7 +149,7 @@ function prevSong(e) {
     } else {
         USER_STATUS.currentSong = USER_STATUS.currentSong - 1;
     }
-    audioElement.src = SONG_LIST[USER_STATUS.currentSong].songUrl;
+    changeSongDetails(SONG_LIST[USER_STATUS.currentSong], audioElement);
     audioElement.play();
 }
 
@@ -159,9 +160,27 @@ function nextSong(e) {
     } else {
         USER_STATUS.currentSong = USER_STATUS.currentSong + 1;
     }
-    audioElement.src = SONG_LIST[USER_STATUS.currentSong].songUrl;
+    changeSongDetails(SONG_LIST[USER_STATUS.currentSong], audioElement);
     audioElement.play();
 }
+
+const changeSongDetails = (currentlyPlaying, audioElement) => {
+    console.log(currentlyPlaying);
+
+    let songName = currentlyPlaying.songName;
+    console.log(currentlyPlaying.songName);
+
+    let songArtist = currentlyPlaying.songArtist;
+    let songPicture = currentlyPlaying.songPicture;
+    let songUrl = currentlyPlaying.songUrl;
+
+    //let picture = document.getElementById("player-song-picture");
+    //console.log(picture);
+    //document.getElementById("player-song-name").innerText = songName;
+    //document.getElementById("player-song-artist").innerText = songArtist;
+    //document.getElementById("player-song-picture").src = songPicture;
+    audioElement.src = songUrl;
+};
 
 const saveSong = () => {
     USER_STATUS.likedSongs.push(audioElement.src);

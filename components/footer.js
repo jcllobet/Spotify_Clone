@@ -2,12 +2,13 @@ function footer(elementId) {
     const template = `
     <div class="current-song">
             <div>
-                <img src="/assets/images/global/Bildschirmfoto_2022-03-28_um_13.42.07.png" alt="">
+                <img src="/assets/images/global/Bildschirmfoto_2022-03-28_um_13.42.07.png" alt=""
+                    class="player-song-picture">
             </div>
             <div>
                 <div class="artist">
-                    <h5>Current Song</h5>
-                    <span>Artist</span>
+                    <h5 class="player-song-name">Current Song</h5>
+                    <span class="player-song-artist">Artist</span>
                 </div>
                 <div class="actions">
                     <a href="#" class="music-like-btn d-flex">
