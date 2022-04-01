@@ -111,15 +111,6 @@ const addPauseListener = () => {
     );
 };
 
-const addPrevListener = () => {
-    // console.log(pauseButton);
-    prevButton.addEventListener("click", handlePlayButton);
-    pauseButton.style.display = "none";
-    console.log(
-        `Added Listener to pauseButton on click with function ${handlePlayButton}`
-    );
-};
-
 function handlePlayButton() {
     // console.log(audioElement);
 
