@@ -4,7 +4,7 @@
 - And with the support of the following libraries `Bootstrap`, and `Font Awesome`.
 
 Build by:
-- Ahmed
+- 💪🏿 Ahmed
 - 🚀 Jan
 - 🙃 Madara
 - 🎨 Max
