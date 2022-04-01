@@ -174,11 +174,9 @@ const changeSongDetails = (currentlyPlaying, audioElement) => {
     let songPicture = currentlyPlaying.songPicture;
     let songUrl = currentlyPlaying.songUrl;
 
-    //let picture = document.getElementById("player-song-picture");
-    //console.log(picture);
-    //document.getElementById("player-song-name").innerText = songName;
-    //document.getElementById("player-song-artist").innerText = songArtist;
-    //document.getElementById("player-song-picture").src = songPicture;
+    document.querySelector(".player-song-name").innerText = songName;
+    document.querySelector(".player-song-artist").innerText = songArtist;
+    document.querySelector(".player-song-picture").src = songPicture;
     audioElement.src = songUrl;
 };
 
@@ -195,6 +193,19 @@ const checkIfEmpty = (btnName, btnElement) => {
     if (btnElement === EMPTY) {
         console.log(`${btnName} is empty`);
     }
+};
+
+// replaces footer song values by current status
+const updateSongFooter = () => {
+    let songName = document.querySelector(".player-song-name");
+    let songArtist = document.querySelector(".player-song-artist");
+    let songPicture = document.querySelector(".player-song-picture");
+
+    songName.innerText = SONG_LIST[USER_STATUS.currentSong].songName;
+    songArtist.innerText = SONG_LIST[USER_STATUS.currentSong].songArtist;
+    songPicture.src = SONG_LIST[USER_STATUS.currentSong].songPicture;
+
+    console.log("songs were replaced successfully");
 };
 
 //----------------------------------------------------------------------------------------------------------------------
@@ -219,6 +230,8 @@ window.onload = function () {
         sidenav("sidenav"); // We can add routes, currentRoute if needed
         footer("footer"); // We can add routes, currentRoute if needed
 
+        // updateSongFooter();
+        //replacing footer song values by current
         // refreshed buttons Arr
         let refreshedArr = [];
         //reload the buttons and add listener
