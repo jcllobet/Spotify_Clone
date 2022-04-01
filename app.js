@@ -60,6 +60,7 @@ let SONG_LIST = [
 
 // footer
 let playButton = EMPTY;
+let albumPlayButton = EMPTY;
 let pauseButton = EMPTY;
 let nextButton = EMPTY;
 let prevButton = EMPTY;
@@ -257,6 +258,7 @@ window.onload = function () {
         let refreshedArr = [];
         //reload the buttons and add listener
         playButton = document.querySelector(".music-play-btn");
+        albumPlayButton = document.querySelector(".play-stop-audio-from-album");
         pauseButton = document.querySelector(".music-pause-btn");
         prevButton = document.querySelector(".music-prev-btn");
         nextButton = document.querySelector(".music-next-btn");
@@ -285,59 +287,14 @@ window.onload = function () {
         addPauseListener();
         //add all the other listeners
         addListener("playButton", playButton, "click", handlePlayButton);
+        addListener(
+            "menuPlayButton",
+            albumPlayButton,
+            "click",
+            handlePlayButton
+        );
         addListener("prevButton", prevButton, "click", prevSong);
         addListener("nextButton", nextButton, "click", nextSong);
         addListener("shuffleButton", shuffleButton, "click", randomSong);
     }
 };
-
-// let loginButtonsObj = {
-//     loginButton: [
-//         ("query", "logInButton"),
-//         ("action", "clicked"),
-//         ("CallbackFunct", checkIfValid),
-//     ],
-// };
-
-// let homeObj = {
-//     playButton: [
-//         ("query", "playButton"),
-//         ("action", "clicked"),
-//         ("CallbackFunct", handlePlayButton),
-//     ],
-//     pauseButton: [
-//         ("query", "pauseButton"),
-//         ("action", "clicked"),
-//         ("CallbackFunct", handlePlayButton),
-//     ],
-//     nextButton: [
-//         ("query", "nextButton"),
-//         ("action", "clicked"),
-//         ("CallbackFunct", changeSong),
-//     ],
-//     prevButton: [
-//         ("query", "prevButton"),
-//         ("action", "clicked"),
-//         ("CallbackFunct", changeSong),
-//     ],
-//     shuffleButton: [
-//         ("query", "shuffleButton"),
-//         ("action", "clicked"),
-//         ("CallbackFunct", changeSong),
-//     ],
-//     repeatButton: [
-//         ("query", "repeatButton"),
-//         ("action", "clicked"),
-//         ("CallbackFunct", changeSong),
-//     ],
-//     likeButton: [
-//         ("query", "likeButton"),
-//         ("action", "clicked"),
-//         ("CallbackFunct", saveSong),
-//     ],
-//     audioElement: [
-//         ("query", "audioElement"),
-//         ("action", "ended"),
-//         ("CallbackFunct", changeSong),
-//     ],
-// };
