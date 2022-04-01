@@ -33,12 +33,12 @@
   <body>
     <div class="container-fluid px-0">
       <div class="row no-gutters">
-        <div class="col-2">
+        <div class="col-1">
           <section id="sidenav">
             <!-- Side-nav javascript automatically injected during window load in app.js -->
           </section>
         </div>
-        <div class="col-10">
+        <div class="col-11">
           <main id="artist">
             <div class="top-background">
               <div class="navtop">
@@ -93,12 +93,6 @@
             <div class="second-part">
               <div class="top-stuffs d-flex">
                 <div id="playAudio" class="play-btn my-3 mx-3"></div>
-                <audio
-                  id="testAudio"
-                  hidden
-                  src="/assets/music/music.mp3"
-                  type="audio/mpeg"
-                ></audio>
                 <button
                   type="button"
                   class="btn btn-outline-light px-2 border-1 my-4"
@@ -376,22 +370,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <script src="app.js" type="module"></script>
-    <script type="text/javascript">
-      document
-        .getElementById("playAudio")
-        .addEventListener("click", function () {
-          var audio = document.getElementById("testAudio");
-          if (this.className == "is-playing") {
-            this.className = "";
-            this.innerHTML = `<div id="playAudio" class="play-btn my-3 mx-3"></div>`;
-            audio.pause();
-          } else {
-            this.className = "is-playing";
-            this.innerHTML = `<div class="pause-btn my-3 mx-3"></div>`;
-            audio.play();
-          }
-        });
-    </script>
+    <script src="/app.js" type="module"></script>
   </body>
 </html>
