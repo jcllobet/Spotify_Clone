@@ -72,8 +72,12 @@ async function playAudio() {
 window.onload = function () {
     let path = window.location.pathname;
     console.log(path);
+
     if (path.match("/pages/login.html") || path.match("/pages/register.html")) {
+        //reloading button
         button = document.getElementById("logInButton");
+
+        //adding listner
         addLoginListener();
     } else {
         console.log("we are not in login");
