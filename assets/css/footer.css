@@ -37,7 +37,7 @@
     border: 1px solid yellow;
 }
 
-#footer > .current-song > div:last-of-type > div {
+#footer > .current-song > div:last-of-type > .artist {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -46,19 +46,30 @@
     padding: 10px;
 }
 
-#footer > .current-song > div:last-of-type > div > h5 {
+#footer > .current-song > div:last-of-type > .artist > h5 {
     font-size: x-small;
-    font-weight: bold;
+    font-weight: bolder;
+    word-spacing: -1px;
     margin: 0 auto;
 }
 
-#footer > .current-song > div:last-of-type > div > span {
+#footer > .current-song > div:last-of-type > .artist > span {
     font-size: x-small;
     color: #b3b3b3;
 }
 
-#footer > .current-song > div:last-of-type > i:hover {
-    /* Maybe adding a fill or changing icon on filter */
+#footer > .current-song > div:last-of-type > .actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer > .current-song > div:last-of-type > .actions > a {
+    color: lightgrey;
+    margin-left: 10px;
+}
+
+#footer > .current-song > div:last-of-type > .actions > a:hover {
+    color: white;
 }
 
 #footer > .player-controls {
@@ -66,30 +77,120 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border: 1px solid red;
     margin: auto 0;
+    height: 90px;
+}
+
+#footer > .player-controls > .player-controls_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid green;
+}
+
+#footer > .player-controls > .player-controls_buttons > a {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: lightgray;
+}
+
+#footer > .player-controls > .player-controls_buttons > a:hover {
+    color: white;
 }
 
 #footer > .player-controls > .progress-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-#footer > .player-controls > .progress-container > .progress {
-    background-color: white;
+#footer > .player-controls > .progress-container > .progress-background {
+    background-color: #464646;
+    width: 250px;
+    height: 5px;
+    border-radius: 5px;
+}
+
+#footer
+    > .player-controls
+    > .progress-container
+    > .progress-background
+    > .progress-bar {
+    background-color: lightgrey;
+    width: 20%;
+    height: 5px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+#footer
+    > .player-controls
+    > .progress-container
+    > .progress-background
+    > .progress-bar:hover {
+    background-color: #1fdf64;
+}
+
+#footer > .player-controls > .progress-container > span {
+    font-size: small;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 #footer > .volume-controls {
     flex-grow: 1.5;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: flex-end;
     border: 1px solid white;
     margin: auto 0;
+    height: 90px;
 }
 
-#footer > .volume-controls > .volume-progress-container > .progress {
-    background-color: white;
+#footer > .volume-controls > a {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: lightgrey;
 }
+
+#footer > .volume-controls > a:hover {
+    color: white;
+}
+
+#footer > .volume-controls > .volume-progress-container > .progress-background {
+    background-color: #464646;
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+}
+
+#footer
+    > .volume-controls
+    > .volume-progress-container
+    > .progress-background
+    > .progress-bar {
+    background-color: lightgrey;
+    width: 50%;
+    height: 5px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+#footer
+    > .volume-controls
+    > .volume-progress-container
+    > .progress-background
+    > .progress-bar:hover {
+    background-color: #1fdf64;
+}
+
+/* .circular-white-bg {
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+} */

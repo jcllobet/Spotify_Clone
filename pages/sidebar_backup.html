@@ -24,10 +24,91 @@
 <body>
     <div class="container-fluid px-0">
         <div class="row no-gutters">
-            <section class="col-2" id="sidenav">
-                <!-- Side-nav javascript automatically injected during window load in app.js -->
+            <section class="" id="sidenav">
+                <img src="/assets/images/sidebar/nav_logo.png" alt="spotify logo" class="nav-logo" />
+                <ul class='list-group'>
+                    <li class="list-group-item list-group-item-action active">
+                        <a href="/index.html" class="d-flex">
+                            <i class="bi bi-house-door-fill fa-2x"> </i>
+                            <span class=" justify-content-center text-center mx-3 my-auto">
+                                Home
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-group-item list-group-item-action">
+                        <a href="/pages/search_page.html" class="d-flex">
+                            <i class="bi bi-search fa-2x"> </i>
+                            <span class=" justify-content-center text-center mx-3 my-auto font-weight-bold">
+                                Search
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-group-item list-group-item-action">
+                        <a href="/pages/artist.html" class="d-flex">
+                            <i class="bi bi-music-note-list fa-2x"> </i>
+                            <span class=" justify-content-center text-center mx-3 my-auto font-weight-bold">
+                                Your Library
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-group-item list-group-item-action mt-4">
+                        <a href="/index.html" class="d-flex">
+                            <i class="bi bi-plus-square-fill fa-2x"> </i>
+                            <span class=" justify-content-center text-center mx-3 my-auto">
+                                Create Playlist
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-group-item list-group-item-action">
+                        <a href="/index.html" class="d-flex">
+                            <i class="bi bi-suit-heart-fill fa-2x heart"> </i>
+                            <span class=" justify-content-center text-center mx-3 my-auto">
+                                Liked Songs
+                            </span>
+                        </a>
+                    </li>
+                    <hr />
+                    <li>
+                        <div class="song-scroller">
+                            <ol>
+                                <!-- this here directs to the album page -->
+                                <li><a href="/pages/album.html">
+                                        Bohemian Rhapsody
+                                    </a></li>
+                                <li>Your Top Songs 2020</li>
+                                <li>In Love with you</li>
+                                <li>This is Rod Stewart</li>
+                                <li>Franchise ft. Young Thug</li>
+                                <li>Your Top Songs 2019</li>
+                                <li>Palleggio</li>
+                                <li>This is Joe Bonamassa</li>
+                                <li>Jun19</li>
+                                <li>Jack 30th Party 2</li>
+                                <li>Jack 30th Party</li>
+                                <li>This is Opeth</li>
+                                <li>Metal Ballads</li>
+                                <li>New Playlist</li>
+                                <li>Your Top Songs 2019</li>
+                                <li>Legends Never Die</li>
+                                <li>Lofi Coders</li>
+                                <li>Coding Mode</li>
+                                <li>invisible cloud 2022</li>
+                                <li>Chill Lofi Study Beats</li>
+                            </ol>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item list-group-item-action">
+                        <a href="/index.html" class="d-flex">
+                            <i class="bi bi-box-arrow-down fa-2x install"> </i>
+                            <span class=" justify-content-center text-center mx-3 my-auto install">
+                                Install App
+                            </span>
+                        </a>
+                    </li>
+                </ul>
             </section>
-            <div class="col-10">
+            <div class="col-12">
 
                 <main id="homepage">
 
@@ -315,105 +396,6 @@
     </div>
 
     <footer id="footer">
-        <div class="current-song">
-            <div>
-                <img src="/assets/images/global/Bildschirmfoto_2022-03-28_um_13.42.07.png" alt=""
-                    class="player-song-picture">
-            </div>
-            <div>
-                <div class="artist">
-                    <h5 class="player-song-name">Current Song</h5>
-                    <span class="player-song-artist">Artist</span>
-                </div>
-                <div class="actions">
-                    <a href="#" class="music-like-btn d-flex">
-                        <i class="bi bi-heart fa"></i>
-                    </a>
-
-                    <a href="#" class="d-flex">
-                        <i class="bi bi-x-lg fa"></i>
-                    </a>
-
-                    <a href="#" class="d-flex">
-                        <i class="bi bi-pip fa"></i>
-                    </a>
-
-                </div>
-
-            </div>
-        </div>
-
-        <audio class="audio-play" src="
-        /music/surprise.mp3">
-        </audio>
-
-        <div class="player-controls">
-            <div class="player-controls_buttons">
-                <a href="#" class="music-shuffle-btn">
-                    <i class="bi bi-shuffle fa"></i>
-                </a>
-
-                <a href="#" class="music-prev-btn">
-                    <i class="bi bi-skip-start-fill fa-lg"></i>
-                </a>
-
-                <a href="#" class="music-play-btn">
-                    <i class="bi bi-play-fill fa-2x"></i>
-                    <!-- <span class="circular-white-bg">Mec</span> -->
-                </a>
-                <a href="#" class="music-pause-btn">
-                    <i class="bi bi-pause-fill fa-2x"></i>
-                    <!-- <span class="circular-white-bg">Mec</span> -->
-                </a>
-
-                <a href="#" class="music-next-btn">
-                    <i class="bi bi-skip-end-fill fa-lg"></i>
-                </a>
-
-                <a href="#" class="music-repeat-btn">
-                    <i class="bi bi-arrow-repeat fa-lg"></i>
-                </a>
-
-            </div>
-            <div class="progress-container">
-                <span class="player-song-seconds">0:00</span>
-                <div class="progress-background">
-                    <!-- https://getbootstrap.com/docs/4.0/components/progress/ -->
-                    <div class="progress-bar" id="song-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                        aria-valuemax="100"></div>
-                </div>
-                <span>3:00</span>
-            </div>
-        </div>
-
-        </div>
-        <div class="volume-controls mx-2">
-            <a href="#" class="d-flex">
-                <i class="bi bi-mic fa"></i>
-            </a>
-
-            <a href="#" class="d-flex">
-                <i class="bi bi-view-list fa"></i>
-            </a>
-
-            <a href="#" class="d-flex">
-                <i class="bi bi-laptop fa"></i>
-            </a>
-
-            <a href="#" class="d-flex">
-                <i class="bi bi-volume-up fa"></i>
-            </a>
-
-
-            <div class="volume-progress-container">
-                <div class="progress-background mx-1">
-                    <!-- https://getbootstrap.com/docs/4.0/components/progress/ -->
-                    <div class="progress-bar" id="volume-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                        aria-valuemax="100"></div>
-                </div>
-            </div>
-            <i class="bi bi-arrows-angle-expand fa"></i>
-        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

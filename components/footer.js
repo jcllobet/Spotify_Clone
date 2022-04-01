@@ -2,43 +2,102 @@ function footer(elementId) {
     const template = `
     <div class="current-song">
             <div>
-                <img src="/assets/images/global/Bildschirmfoto_2022-03-28_um_13.42.07.png" alt="">
+                <img src="/assets/images/global/Bildschirmfoto_2022-03-28_um_13.42.07.png" alt=""
+                    class="player-song-picture">
             </div>
             <div>
-                <div>
-                    <h5>Current Song</h5>
-                    <span>Artist</span>
+                <div class="artist">
+                    <h5 class="player-song-name">Current Song</h5>
+                    <span class="player-song-artist">Artist</span>
                 </div>
-                <i class="bi bi-heart fa"> </i>
+                <div class="actions">
+                    <a href="#" class="music-like-btn d-flex">
+                        <i class="bi bi-heart fa"></i>
+                    </a>
+
+                    <a href="#" class="d-flex">
+                        <i class="bi bi-x-lg fa"></i>
+                    </a>
+
+                    <a href="#" class="d-flex">
+                        <i class="bi bi-pip fa"></i>
+                    </a>
+
+                </div>
+
             </div>
         </div>
+
+        <audio class="audio-play" src="
+        /music/surprise.mp3">
+        </audio>
 
         <div class="player-controls">
             <div class="player-controls_buttons">
-                <i class="fas fa-step-backward"></i>
-                <i class="fas fa-step-backward"></i>
-                <i class="fas fa-play"></i>
-                <i class="fas fa-step-forward"></i>
-                <i class="fas fa-step-forward"></i>
+                <a href="#" class="music-shuffle-btn">
+                    <i class="bi bi-shuffle fa"></i>
+                </a>
+
+                <a href="#" class="music-prev-btn">
+                    <i class="bi bi-skip-start-fill fa-lg"></i>
+                </a>
+
+                <a href="#" class="music-play-btn">
+                    <i class="bi bi-play-fill fa-2x"></i>
+                    <!-- <span class="circular-white-bg">Mec</span> -->
+                </a>
+                <a href="#" class="music-pause-btn">
+                    <i class="bi bi-pause-fill fa-2x"></i>
+                    <!-- <span class="circular-white-bg">Mec</span> -->
+                </a>
+
+                <a href="#" class="music-next-btn">
+                    <i class="bi bi-skip-end-fill fa-lg"></i>
+                </a>
+
+                <a href="#" class="music-repeat-btn">
+                    <i class="bi bi-arrow-repeat fa-lg"></i>
+                </a>
+
             </div>
             <div class="progress-container">
-                <span>0:00</span>
-                <div class="progress" draggable=true>test</div>
+                <span class="player-song-seconds">0:00</span>
+                <div class="progress-background">
+                    <!-- https://getbootstrap.com/docs/4.0/components/progress/ -->
+                    <div class="progress-bar" id="song-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
                 <span>3:00</span>
             </div>
+        </div>
 
         </div>
-        <div class="volume-controls">
-            <i class="fas fa-step-backward"></i>
-            <i class="fas fa-step-backward"></i>
-            <i class="fas fa-step-backward"></i>
+        <div class="volume-controls mx-2">
+            <a href="#" class="d-flex">
+                <i class="bi bi-mic fa"></i>
+            </a>
+
+            <a href="#" class="d-flex">
+                <i class="bi bi-view-list fa"></i>
+            </a>
+
+            <a href="#" class="d-flex">
+                <i class="bi bi-laptop fa"></i>
+            </a>
+
+            <a href="#" class="d-flex">
+                <i class="bi bi-volume-up fa"></i>
+            </a>
+
+
             <div class="volume-progress-container">
-                <div class="progress" draggable=true>Long</div>
+                <div class="progress-background mx-1">
+                    <!-- https://getbootstrap.com/docs/4.0/components/progress/ -->
+                    <div class="progress-bar" id="volume-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
             </div>
-            <div class="volume">
-                <div class="volumeUp">+</div>
-                <div class="volumeDown">-</div>
-            </div>
+            <i class="bi bi-arrows-angle-expand fa"></i>
         </div>
     `;
     // Add HTML template HERE

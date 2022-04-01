@@ -1,10 +1,31 @@
-/* Write classes or css related to the homepage */
 #homepage {
     background-color: #000000;
     background-image: linear-gradient(0deg, #000000 60%, #490000 100%);
-    min-height: 150vh;
+    min-height: 170vh;
     color: white;
+    margin-left: 300px;
+
 }
+
+.backArrow,
+.forwardArrow {
+    background-color: black;
+    color: white;
+    border: 0px solid black;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 10px 17px;
+    font-size: 1.4rem;
+}
+
+.backArrow:hover,
+.forwardArrow:hover {
+    background-color: #494949;
+    opacity: 0.7;
+    font-size: 1.4rem;
+}
+
 .img-small img {
     width: 80px;
     height: 80px;
@@ -29,11 +50,13 @@
     position: absolute;
     left: 40px;
 }
+
 .card2 img {
     height: 160px;
     width: 160px;
     padding: 15px;
 }
+
 .card2 {
     position: relative;
     background-color: #a0a0a028;
@@ -43,56 +66,36 @@
     margin-left: 15px;
 }
 
-.card-title {
+.card-title2 {
     max-width: 200px;
-    /* overflow: hidden; */
-}
-/********************************/
-.back {
-    background-color: black;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    position: relative;
+    margin-left: 15px;
 }
 
-.back::before {
-    content: "";
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 2.5px;
-    border-style: solid;
-    border-width: 2px 2px 2px 2px;
-    border-color: white white transparent transparent;
-    transform: rotate(225deg);
+.card-text2 {
+    margin-left: 15px;
+    opacity: 0.5;
 }
 
-.forward {
-    background-color: black;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    position: relative;
+.card-title1 {
+    width: 200px;
 }
 
-.forward::before {
-    content: "";
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    right: 2.5px;
-    left: 0;
-    border-style: solid;
-    border-width: 2px 2px 2px 2px;
-    border-color: rgba(255, 255, 255, 0.562) rgba(255, 255, 255, 0.562)
-        transparent transparent;
-    transform: rotate(45deg);
+.hoverGreen:hover {
+    color: #1db954;
+    text-decoration: underline;
+}
+
+.hoverH:hover {
+    text-decoration: underline;
+}
+
+.card1:hover,
+.card2:hover {
+    background-color: #919191;
+    opacity: 0.7;
+}
+#myProfil {
+    position:absolute;
+    top: 0px;
+    right:15px;
 }

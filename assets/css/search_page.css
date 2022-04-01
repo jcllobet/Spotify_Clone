@@ -1,0 +1,309 @@
+#search-page, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/* ::-webkit-scrollbar {
+  width: 14px;
+}
+::-webkit-scrollbar-track {
+  background: #121212;
+  opacity: 0; 
+}
+::-webkit-scrollbar-thumb {
+  background: #535353;  
+} */
+.search-barr {
+  margin-left: 300px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #121212;
+  width: 100%;
+  align-content: flex-start;
+}
+.backedArrow,
+.forwardedArrow {
+  background-color: black;
+  color: white;
+  border: 0px solid black;
+  border-radius: 50%;
+  margin-right: 20px;
+  padding: 10px 17px;
+  font-size: 20px;
+}
+.backedArrow:hover,
+.forwardedArrow:hover {
+  background-color: rgb(43, 42, 42);
+  color: white;
+  border: 0px solid rgb(43, 42, 42);
+  border-radius: 50%;
+  margin-right: 20px;
+  padding: 10px 17px;
+  font-size: 20px;
+}
+#search-boxbig {
+display: block;
+  padding-top: 20px;
+  margin-left: 300px;
+  background-color: #121212;
+}
+form {
+  width: 320px;
+  color: none;
+  display: flex;
+  padding: 2px;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+}
+input[type="search"] {
+  width: 320px;
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 7px 8px;
+  font-size: 14px;
+  color: inherit;
+  border: none;
+  border-radius: inherit;
+}
+
+input[type="Artists,songs or podcasts..."]::placeholder {
+  color: rgb(255, 255, 255);
+}
+button[type="submit"] {
+  overflow: hidden;
+  background-color: white;
+  border: none;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: inherit;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.bigpp-texthere {
+  font-weight: 700;
+  color: white;
+  font-size: 28px;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+/* grid go here */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.genre-pic {
+  right: 0%;
+  transform: rotate(25deg) translate(18%, 2%);
+  bottom: 0%;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 20%);
+  height: 100px;
+  position: absolute;
+  width: 100px;
+}
+.the-genrename {
+  color: white;
+  font-weight: 800;
+  font-size: 30px;
+}
+/* the pain of multiple cards */
+.genre-card1 {
+  background-color: #4dc6ff;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  height: 230px;
+  width: 230px;
+  border: none;
+  overflow: hidden;
+}
+.genre-card1:hover {
+  background-color: #4dc6ff;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  height: 230px;
+  width: 230px;
+  border: none;
+  overflow: hidden;
+  transform: scale(1.05);
+}
+.genre-card2 {
+  background-color: #ff9bcd;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  height: 230px;
+  width: 230px;
+  border: none;
+  overflow: hidden;
+}
+.genre-card2:hover {
+  background-color: #ff9bcd;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  height: 230px;
+  width: 230px;
+  border: none;
+  overflow: hidden;
+  transform: scale(1.05);
+}
+.genre-card3 {
+  background-color: #65cf77;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  height: 230px;
+  width: 230px;
+  border: none;
+  overflow: hidden;
+}
+.genre-card3:hover {
+  background-color: #65cf77;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  height: 230px;
+  width: 230px;
+  border: none;
+  overflow: hidden;
+  transform: scale(1.05);
+}
+.genre-card4 {
+  background-color: #da906e;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  height: 230px;
+  width: 230px;
+  border: none;
+  overflow: hidden;
+}
+.genre-card4:hover {
+  background-color: #da906e;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  height: 230px;
+  width: 230px;
+  border: none;
+  overflow: hidden;
+  transform: scale(1.05);
+}
+.genre-card5 {
+  background-color: #c2535c;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  height: 230px;
+  width: 230px;
+  border: none;
+  overflow: hidden;
+}
+.genre-card5:hover {
+  background-color: #c2535c;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  height: 230px;
+  width: 230px;
+  border: none;
+  overflow: hidden;
+  transform: scale(1.05);
+}
+.genre-card6 {
+  background-color: #3f4e8f;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  height: 230px;
+  width: 230px;
+  border: none;
+  overflow: hidden;
+}
+.genre-card6:hover {
+  background-color: #3f4e8f;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  height: 230px;
+  width: 230px;
+  border: none;
+  overflow: hidden;
+  transform: scale(1.05);
+}
+.genre-card7 {
+  background-color: #e7cc70;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  height: 230px;
+  width: 230px;
+  border: none;
+  overflow: hidden;
+}
+.genre-card7:hover {
+  background-color: #e7cc70;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  height: 230px;
+  width: 230px;
+  border: none;
+  overflow: hidden;
+  transform: scale(1.05);
+}
+.genre-card8 {
+  background-color: #ac5dc4;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  height: 230px;
+  width: 230px;
+  border: none;
+  overflow: hidden;
+}
+.genre-card8:hover {
+  background-color: #ac5dc4;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  height: 230px;
+  width: 230px;
+  border: none;
+  overflow: hidden;
+  transform: scale(1.05);
+}
+.genre-card9 {
+  background-color: #43a750;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  height: 230px;
+  width: 230px;
+  border: none;
+  overflow: hidden;
+}
+.genre-card9:hover {
+  background-color: #43a750;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  height: 230px;
+  width: 230px;
+  border: none;
+  overflow: hidden;
+  transform: scale(1.05);
+}
+/* cards end here */
+.bottom-fillerepisode {
+  background-color: #121212;
+  height: 150px;
+}
