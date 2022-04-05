@@ -239,20 +239,6 @@ window.onload = function () {
     } else {
         console.log("we are not in login");
 
-        if (
-            path.match("/pages/album.html") ||
-            path.match("/pages/artist.html")
-        ) {
-            albumPlayButton = document.querySelector(
-                ".play-stop-audio-from-album"
-            );
-            addListener(
-                "menuPlayButton",
-                albumPlayButton,
-                "click",
-                handlePlayButton
-            );
-        }
         //render sidenav & footer
         sidenav("sidenav"); // We can add routes, currentRoute if needed
         footer("footer"); // We can add routes, currentRoute if needed
