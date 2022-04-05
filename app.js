@@ -1,11 +1,25 @@
 // Its function is to initialize other components / js functions
-const { getArtistData } = require("./functions/getArtistData.js");
-const { renderFooter } = require("./components/renderFooter.js");
-const { renderSidenav } = require("./components/renderSidenav.js");
-const {
-    updateArtistName,
-    renderAlbumsFromArtist,
-} = require("./components/renderArtistAlbums.js");
+
+import { fetchArtistData } from "./functions/getArtistData.js";
+import { renderFooter } from "./components/renderFooter.js";
+import { renderSidenav } from "./components/renderSidenav.js";
+import { updateArtistName } from "./components/renderArtistAlbums.js";
+
+import { fileURLToPath } from "url";
+import { dirname } from "path";
+
+import express from "./node_modules/express/index.js";
+import path from "./node_modules/path/path.js";
+
+const app = express();
+const router = express.Router();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+router.get("/", function (req, res) {
+    res.sendFile(path.join(__dirname + "/pages/artist.html"));
+    //__dirname : It will resolve to your project folder.
+});
 
 const EMPTY = "not initialized";
 
@@ -17,6 +31,8 @@ let USER_STATUS = {
     isAdmin: false,
     likedSongs: [],
 };
+
+let dataArr = [];
 
 let SONG_LIST = [
     {
@@ -251,7 +267,9 @@ if (typeof window !== "undefined") {
             if (path.match("/pages/artist.html")) {
                 // add albums
                 let artist = "Eminem";
-                renderAlbumsFromArtist();
+                fetchArtistData(artist, dataArr);
+                console.log("DATA ARR".dataArr);
+                updateArtistName(artist, "artist-name", dataArr);
             }
             console.log("we are not in login");
 
@@ -305,3 +323,9 @@ if (typeof window !== "undefined") {
     console.log("You are on the server");
     // ⛔️ Don't use window here
 }
+
+//add the router
+app.use("/", router);
+app.listen(process.env.port || 3000);
+
+console.log("Running at Port 3000");

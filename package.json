@@ -1,6 +1,10 @@
 {
+    "type": "module",
     "dependencies": {
-        "node-fetch": "^3.2.3"
+        "axios": "^0.26.1",
+        "express": "^4.17.3",
+        "node-fetch": "^3.2.3",
+        "path": "^0.12.7"
     },
     "scripts": {
         "start": "node app.js"

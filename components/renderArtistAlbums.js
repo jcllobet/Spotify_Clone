@@ -1,5 +1,9 @@
-const updateArtistName = (artistName, elementId, data) => {};
-function renderAlbumsFromArtist(artistName, elementId, data) {
+export const updateArtistName = (artistName, elementId) => {
+    const artistNameElement = document.getElementById(`${elementId}`);
+    artistNameElement.innerHTML = `${artistName}`;
+    console.log(artistName);
+};
+export function renderAlbumsFromArtist(artistName, elementId, data) {
     const template = `
     <div class="current-song">
             <div>
@@ -106,5 +110,3 @@ function renderAlbumsFromArtist(artistName, elementId, data) {
     const selected = document.getElementById(elementId);
     selected.innerHTML = template;
 }
-
-module.exports = { updateArtistName, renderAlbumsFromArtist };

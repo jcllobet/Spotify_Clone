@@ -1,4 +1,4 @@
-function renderFooter(elementId) {
+export function renderFooter(elementId) {
     const template = `
     <div class="current-song">
             <div>
@@ -105,5 +105,3 @@ function renderFooter(elementId) {
     const selected = document.getElementById(elementId);
     selected.innerHTML = template;
 }
-
-module.exports = { renderFooter };

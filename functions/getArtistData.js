@@ -1,24 +1,34 @@
-const fetch = (...args) =>
-    import("node-fetch").then(({ default: fetch }) => fetch(...args));
+// const fetch = (...args) =>
+//     import("node-fetch").then(({ default: fetch }) => fetch(...args));
 
-const options = {
-    method: "GET",
-    headers: {
-        "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com",
-        "X-RapidAPI-Key": process.env.RAPID_KEY,
-    },
-};
+import axios from "../node_modules/axios/index.js";
+import { updateArtistName } from "../components/renderArtistAlbums.js";
 
-async function getArtistData(artistName) {
-    const response = await fetch(
-        `https://striveschool-api.herokuapp.com/api/deezer/search?q=${artistName}`
-    );
-    const formattedResponse = await response.json();
-    //console.log(formattedResponse);
-    const dataArr = await formattedResponse["data"];
-    console.log(dataArr[0]);
+export async function fetchArtistData(artistName, dataArr) {
+    const options = {
+        method: "GET",
+        url: "https://striveschool-api.herokuapp.com/api/deezer/search",
+        params: { q: `${artistName}` },
+        //headers: {
+        //    "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com",
+        //    "X-RapidAPI-Key": process.env.RAPID_KEY,
+        //},
+    };
+
+    try {
+        const response = await axios.request(options);
+        console.log("✅ Status ok");
+        //console.log(response);
+        let data = response.data["data"];
+
+        //console.log(data);
+
+        updateArtistName(artistName, "artist-name");
+    } catch (error) {
+        console.error(error);
+    }
 }
 
-getArtistData("eminem");
+//fetchArtistData("eminem");
 
-module.exports = { getArtistData };
+//fetchArtistData("eminem");
