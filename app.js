@@ -1,7 +1,11 @@
 // Its function is to initialize other components / js functions
-
-import { footer } from "./components/footer.js";
-import { sidenav } from "./components/sidenav.js";
+const { getArtistData } = require("./functions/getArtistData.js");
+const { renderFooter } = require("./components/renderFooter.js");
+const { renderSidenav } = require("./components/renderSidenav.js");
+const {
+    updateArtistName,
+    renderAlbumsFromArtist,
+} = require("./components/renderArtistAlbums.js");
 
 const EMPTY = "not initialized";
 
@@ -224,62 +228,80 @@ const startSongSeconds = () => {
 //----------------------------------------------------------------------------------------------------------------------
 
 // Check when dom has finished loading
-window.onload = function () {
-    let path = window.location.pathname;
-    console.log(path);
 
-    console.log(SONG_LIST);
+if (typeof window !== "undefined") {
+    console.log("You are on the browser");
 
-    if (path.match("/pages/login.html") || path.match("/pages/register.html")) {
-        //reloading button
-        loginButton = document.getElementById("logInButton");
+    window.onload = function () {
+        let path = window.location.pathname;
+        console.log(path);
 
-        //adding listeners
-        addListener("loginButton", loginButton, "click", checkIfValid);
-    } else {
-        console.log("we are not in login");
+        console.log(SONG_LIST);
 
-        //render sidenav & footer
-        sidenav("sidenav"); // We can add routes, currentRoute if needed
-        footer("footer"); // We can add routes, currentRoute if needed
+        if (
+            path.match("/pages/login.html") ||
+            path.match("/pages/register.html")
+        ) {
+            //reloading button
+            loginButton = document.getElementById("logInButton");
 
-        updateSongFooter();
-        //replacing footer song values by current
-        // refreshed buttons Arr
-        let refreshedArr = [];
-        //reload the buttons and add listener
-        playButton = document.querySelector(".music-play-btn");
-        pauseButton = document.querySelector(".music-pause-btn");
-        prevButton = document.querySelector(".music-prev-btn");
-        nextButton = document.querySelector(".music-next-btn");
-        shuffleButton = document.querySelector(".music-shuffle-btn");
-        repeatButton = document.querySelector(".music-repeat-btn");
-        likeButton = document.querySelector(".music-like-btn");
-        audioElement = document.querySelector("audio");
+            //adding listeners
+            addListener("loginButton", loginButton, "click", checkIfValid);
+        } else {
+            if (path.match("/pages/artist.html")) {
+                // add albums
+                let artist = "Eminem";
+                renderAlbumsFromArtist();
+            }
+            console.log("we are not in login");
 
-        refreshedArr.push(
-            playButton,
-            pauseButton,
-            prevButton,
-            nextButton,
-            shuffleButton,
-            repeatButton,
-            likeButton
-        );
-        // check if the button is === empty using previously defined function for all elements of the array
-        refreshedArr.forEach((btn) => {
-            checkIfEmpty(btn.id, btn);
-        });
+            //render sidenav & footer
+            renderSidenav("sidenav"); // We can add routes, currentRoute if needed
+            renderFooter("footer"); // We can add routes, currentRoute if needed
 
-        console.log("back to life");
+            updateSongFooter();
+            //replacing footer song values by current
+            // refreshed buttons Arr
+            let refreshedArr = [];
+            //reload the buttons and add listener
+            playButton = document.querySelector(".music-play-btn");
+            pauseButton = document.querySelector(".music-pause-btn");
+            prevButton = document.querySelector(".music-prev-btn");
+            nextButton = document.querySelector(".music-next-btn");
+            shuffleButton = document.querySelector(".music-shuffle-btn");
+            repeatButton = document.querySelector(".music-repeat-btn");
+            likeButton = document.querySelector(".music-like-btn");
+            audioElement = document.querySelector("audio");
 
-        //add the special listeners
-        addPauseListener();
-        //add all the other listeners
-        addListener("playButton", playButton, "click", handlePlayButton);
+            refreshedArr.push(
+                playButton,
+                pauseButton,
+                prevButton,
+                nextButton,
+                shuffleButton,
+                repeatButton,
+                likeButton
+            );
+            // check if the button is === empty using previously defined function for all elements of the array
+            refreshedArr.forEach((btn) => {
+                checkIfEmpty(btn.id, btn);
+            });
 
-        addListener("prevButton", prevButton, "click", prevSong);
-        addListener("nextButton", nextButton, "click", nextSong);
-        addListener("shuffleButton", shuffleButton, "click", randomSong);
-    }
-};
+            console.log("back to life");
+
+            //add the special listeners
+            addPauseListener();
+            //add all the other listeners
+            addListener("playButton", playButton, "click", handlePlayButton);
+
+            addListener("prevButton", prevButton, "click", prevSong);
+            addListener("nextButton", nextButton, "click", nextSong);
+            addListener("shuffleButton", shuffleButton, "click", randomSong);
+        }
+    };
+
+    // ✅ Can use window here
+} else {
+    console.log("You are on the server");
+    // ⛔️ Don't use window here
+}

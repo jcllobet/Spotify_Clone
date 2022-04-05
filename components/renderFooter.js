@@ -1,4 +1,4 @@
-function footer(elementId) {
+function renderFooter(elementId) {
     const template = `
     <div class="current-song">
             <div>
@@ -106,4 +106,4 @@ function footer(elementId) {
     selected.innerHTML = template;
 }
 
-export { footer };
+module.exports = { renderFooter };

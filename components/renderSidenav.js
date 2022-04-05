@@ -1,4 +1,4 @@
-function sidenav(elementId) {
+function renderSidenav(elementId) {
     // if the URL contains 'pages':
     const template = `
     <img src="/assets/images/sidebar/nav_logo.png" alt="spotify logo" class="nav-logo" />
@@ -90,4 +90,4 @@ function sidenav(elementId) {
     selected.innerHTML = template;
 }
 
-export { sidenav };
+module.exports = { renderSidenav };
