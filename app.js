@@ -111,15 +111,6 @@ const addPauseListener = () => {
     );
 };
 
-const addPrevListener = () => {
-    // console.log(pauseButton);
-    prevButton.addEventListener("click", handlePlayButton);
-    pauseButton.style.display = "none";
-    console.log(
-        `Added Listener to pauseButton on click with function ${handlePlayButton}`
-    );
-};
-
 function handlePlayButton() {
     // console.log(audioElement);
 
@@ -248,6 +239,20 @@ window.onload = function () {
     } else {
         console.log("we are not in login");
 
+        if (
+            path.match("/pages/album.html") ||
+            path.match("/pages/artist.html")
+        ) {
+            albumPlayButton = document.querySelector(
+                ".play-stop-audio-from-album"
+            );
+            addListener(
+                "menuPlayButton",
+                albumPlayButton,
+                "click",
+                handlePlayButton
+            );
+        }
         //render sidenav & footer
         sidenav("sidenav"); // We can add routes, currentRoute if needed
         footer("footer"); // We can add routes, currentRoute if needed
@@ -258,7 +263,6 @@ window.onload = function () {
         let refreshedArr = [];
         //reload the buttons and add listener
         playButton = document.querySelector(".music-play-btn");
-        albumPlayButton = document.querySelector(".play-stop-audio-from-album");
         pauseButton = document.querySelector(".music-pause-btn");
         prevButton = document.querySelector(".music-prev-btn");
         nextButton = document.querySelector(".music-next-btn");
@@ -287,12 +291,7 @@ window.onload = function () {
         addPauseListener();
         //add all the other listeners
         addListener("playButton", playButton, "click", handlePlayButton);
-        addListener(
-            "menuPlayButton",
-            albumPlayButton,
-            "click",
-            handlePlayButton
-        );
+
         addListener("prevButton", prevButton, "click", prevSong);
         addListener("nextButton", nextButton, "click", nextSong);
         addListener("shuffleButton", shuffleButton, "click", randomSong);
